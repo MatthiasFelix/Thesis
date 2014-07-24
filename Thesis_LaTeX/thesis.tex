@@ -1,0 +1,66 @@
+\documentclass{ce-thesis}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage[latin1]{inputenc}
+\usepackage{program}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+\usepackage[]{algorithm2e}
+
+\usepackage{fancyvrb}
+\DefineVerbatimEnvironment{code}{Verbatim}{fontsize=\small}
+\DefineVerbatimEnvironment{example}{Verbatim}{fontsize=\small}
+
+
+\usepackage{fancyhdr}% fancyhdr related command; details in its documentation
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE]{\leftmark}
+\fancyhead[LO]{\rightmark}
+
+
+\usepackage{graphicx}
+\author{Matthias Felix}
+\title{Social Recommender Systems}
+\begin{document}
+
+% *************** Front matter ***************
+
+\frontmatter
+\input{section-title/title.tex}
+
+\input{section-acknowledgements/acknowledgements.tex}
+\input{section-abstract/abstract.tex} % for English thesis
+
+\tableofcontents
+
+% *************** Main matter ***************
+\mainmatter
+
+\input{1-introduction/introduction.tex}
+\input{2-recommendersystemssocialnetworks/recommendersystemssocialnetworks.tex}
+\input{3-artificialdata/artificialdata.tex}
+\input{4-experiments/experiments.tex}
+\input{5-conclusion/conclusion.tex}
+
+% *************** Bibliography ***************
+\bibliographystyle{apalike}
+\nocite{*}
+\bibliography{section-references/thesisbib}
+
+% *************** Appendixes ***************
+\appendix
+\input{section-appendix/appendix.tex}
+
+% *************** Back matter ***************
+\backmatter
+
+\normalfont
+\clearpage
+\listoffigures
+
+\clearpage
+\listoftables
+
+
+\end{document}

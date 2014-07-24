@@ -1,0 +1,142 @@
+\begin{thebibliography}{}
+
+\bibitem[Cyw, 2014]{Cyworld}
+ (2014).
+\newblock Cyworld social network site.
+\newblock \url{http://www.cyworld.com}.
+
+\bibitem[Gro, 2014]{Grouplens}
+ (2014).
+\newblock Grouplens - social computing research at the university of minnesota.
+\newblock \url{http://grouplens.org/datasets/hetrec-2011/}.
+
+\bibitem[Igr, 2014]{Igraph}
+ (2014).
+\newblock igraph network analysis tool.
+\newblock \url{http://www.igraph.org}.
+
+\bibitem[Las, 2014]{Lastfm}
+ (2014).
+\newblock Last.fm music streaming site.
+\newblock \url{http://www.lastfm.com}.
+
+\bibitem[Lok, 2014]{Lokalisten}
+ (2014).
+\newblock Lokalisten freundes-community.
+\newblock \url{http://www.lokalisten.de}.
+
+\bibitem[Adomavicius and Tuzhilin, 2005]{Adomavicius_2005}
+Adomavicius, G. and Tuzhilin, A. (2005).
+\newblock Toward the next generation of recommender systems: a survey of the
+  state-of-the-art and possible extensions.
+\newblock {\em Knowledge and Data Engineering, IEEE Transactions on},
+  17(6):734--749.
+
+\bibitem[Arias et~al., 2012]{Arias_2012}
+Arias, J. J.~P., Vilas, A.~F., and Redondo, R. P.~D. (2012).
+\newblock {\em Recommender systems for the social web}, volume~32.
+\newblock Springer.
+
+\bibitem[Brandes et~al., 2006]{Brandes_2006}
+Brandes, U., Delling, D., Gaertler, M., G{\"o}rke, R., Hoefer, M., Nikoloski,
+  Z., and Wagner, D. (2006).
+\newblock {\em On modularity - np-completeness and beyond}.
+\newblock Citeseer.
+
+\bibitem[Clauset et~al., 2004]{Clauset_2004}
+Clauset, A., Newman, M.~E., and Moore, C. (2004).
+\newblock Finding community structure in very large networks.
+\newblock {\em Physical review E}, 70(6):066111.
+
+\bibitem[Ekstrand et~al., 2011]{Ekstrand_2011}
+Ekstrand, M.~D., Riedl, J.~T., and Konstan, J.~A. (2011).
+\newblock Collaborative filtering recommender systems.
+\newblock {\em Foundations and Trends in Human-Computer Interaction},
+  4(2):81--173.
+
+\bibitem[Felfernig et~al., 2007]{Felfernig_2007}
+Felfernig, A., Isak, K., Szabo, K., and Zachar, P. (2007).
+\newblock The vita financial services sales support environment.
+\newblock In {\em PROCEEDINGS OF THE NATIONAL CONFERENCE ON ARTIFICIAL
+  INTELLIGENCE}, volume~22, page 1692. Menlo Park, CA; Cambridge, MA; London;
+  AAAI Press; MIT Press; 1999.
+
+\bibitem[Fortunato, 2010]{Fortunato_2010}
+Fortunato, S. (2010).
+\newblock Community detection in graphs.
+\newblock {\em Physics Reports}, 486(3):75--174.
+
+\bibitem[Girvan and Newman, 2002]{Girvan_2002}
+Girvan, M. and Newman, M.~E. (2002).
+\newblock Community structure in social and biological networks.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  99(12):7821--7826.
+
+\bibitem[Groh and Ehmig, 2007]{Groh_2007}
+Groh, G. and Ehmig, C. (2007).
+\newblock Recommendations in taste related domains: collaborative filtering vs.
+  social filtering.
+\newblock In {\em Proceedings of the 2007 international ACM conference on
+  Supporting group work}, pages 127--136. ACM.
+
+\bibitem[Konstas et~al., 2009]{Konstas_2009}
+Konstas, I., Stathopoulos, V., and Jose, J.~M. (2009).
+\newblock On social networks and collaborative recommendation.
+\newblock In {\em Proceedings of the 32Nd International ACM SIGIR Conference on
+  Research and Development in Information Retrieval}, SIGIR '09, pages
+  195--202, New York, NY, USA. ACM.
+
+\bibitem[Liu and Lee, 2010]{Liu_2010}
+Liu, F. and Lee, H.~J. (2010).
+\newblock Use of social network information to enhance collaborative filtering
+  performance.
+\newblock {\em Expert Systems with Applications}, 37(7):4772 -- 4778.
+
+\bibitem[Newman, 2004a]{Newman_2004_1}
+Newman, M.~E. (2004a).
+\newblock Detecting community structure in networks.
+\newblock {\em The European Physical Journal B-Condensed Matter and Complex
+  Systems}, 38(2):321--330.
+
+\bibitem[Newman, 2004b]{Newman_2004_2}
+Newman, M.~E. (2004b).
+\newblock Fast algorithm for detecting community structure in networks.
+\newblock {\em Physical review E}, 69(6):066133.
+
+\bibitem[Newman, 2006]{Newman_2006}
+Newman, M.~E. (2006).
+\newblock Modularity and community structure in networks.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  103(23):8577--8582.
+
+\bibitem[Pazzani and Billsus, 2007]{Pazzani_2007}
+Pazzani, M.~J. and Billsus, D. (2007).
+\newblock Content-based recommendation systems.
+\newblock In {\em The adaptive web}, pages 325--341. Springer.
+
+\bibitem[Pons and Latapy, 2005]{Pons_2005}
+Pons, P. and Latapy, M. (2005).
+\newblock Computing communities in large networks using random walks.
+\newblock In {\em Computer and Information Sciences-ISCIS 2005}, pages
+  284--293. Springer.
+
+\bibitem[Ricci et~al., 2011]{Ricci_2011}
+Ricci, F., Rokach, L., and Shapira, B. (2011).
+\newblock {\em Introduction to Recommender Systems Handbook}, pages 1--35.
+\newblock Springer US.
+
+\bibitem[Salton and McGill, 1983]{Salton_1983}
+Salton, G. and McGill, M.~J. (1983).
+\newblock {\em {Introduction to Modern Information Retrieval}}.
+\newblock McGraw-Hill, New York.
+
+\bibitem[Zaidi et~al., 2012]{Zaidi_2012}
+Zaidi, F., Sallaberry, A., Melan{\c{c}}on, G., et~al. (2012).
+\newblock Generating artificial social networks with small world and scale free
+  properties.
+
+\bibitem[Zheng et~al., 2008]{Zheng_2008}
+Zheng, R., Wilkinson, D., and Provost, F. (2008).
+\newblock Social network collaborative filtering.
+
+\end{thebibliography}

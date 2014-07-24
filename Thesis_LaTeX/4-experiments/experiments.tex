@@ -1,0 +1,50 @@
+\chapter{Experiments}
+\label{c:experiments} This chapter describes the different experiments that were performed in the course of this thesis and their results. The results and findings are analyzed and visualized.
+
+For the experiments, two different kinds of datasets were used. The first dataset that was used most of the time is from the popular online music streaming site last.fm \cite{Lastfm}. For some experiments artificially generated datasets were used. The description of how these datasets were generated can be found in %blabla
+.
+
+\section{Last.fm Dataset}
+\label{st:lastfmdataset} The dataset from last.fm is publicly available from the ``Social Computing Research at the University of Minnesota'' website \cite{Grouplens}. It contains information about 1892 (anonymized) users and 17632 artists. Since the users on last.fm do not explicitly give ratings to an artist, the degree to which a user likes or dislikes an artist is expressed as ``listening-count'' (how many times a user has listened to an artist). There are 92'834 $(user, artist, listeningcount)$-tuples. The dataset further contains 12'717 bi-directional user friend relations in the form of $(user_i, user_j)$-pairs. The dataset further also contains informations about tags that users assigned to artists, but these will not be used in the experiments. However, the friend relations will be used and are indeed very important for the social collaborative filtering algorithms.
+
+\subsection{Normalization and cleaning-up of the Dataset}
+\label{sst:normalizationandcleaningup} The rating file consisting of $(user, artist, listeningcount)$-tuples can already be used as input for a recommender algorithm. With k-fold cross-validation, the tuples can be partitioned into training and test sets. The problem is that the performance of the algorithms will be quite hard to evaulate, since the RMSE that is often used to measure the performance largely depends on the range of the ratings. The listeningcounts that are used as ratings in the last.fm dataset range from 1 to 352'698. There are users who have listeningcounts in the range of a couple of dozen, and others that only have listeningcounts beyond 1'000. This suggests that the listeningcounts need to be normalized so that the resulting RMSE's can acually be interpreted to make statements about the performance of the recommender algorithms.
+
+There are a few steps in the normalization and clean-up process. Firstly, the few users that have the same listeningcount 1 for every artist they have listened to are completely removed. There is no information about the preferences of those users contained in their ratings. It is justifiable to do this since real recommender systems will hardly ever have to deal with a user that gives every item the same rating. Secondly, users with less than 10 ratings are also removed. This is done because of the partitioning of the dataset into training and test sets. There should always be users in both the partitioning and the training set, even if k is as high as 10.
+
+After these removals have been performed, the listeningcounts need to be normalized in the following way:
+\newline
+
+\begin{algorithm}[H]
+\SetAlgoLined
+\KwData{All $(user,artist,listeningcount)$-tuples $x=(u,a,l) \in X$, min (e.g. 1), max (e.g. 5)}
+\KwResult{Normalized $(user,artist,rating)$-tuples $x'=(u,a,r) \in X'$ with $r$ between min and max}
+\For{$u \in X$}{
+currentMin = findMinimum(u)\;
+currentMax = findMaximum(u)\;
+\For{each $x$ with $x(u)=u$}{
+normalizingFactor = $\frac{x(l) - currentMin}{currentMax - currentMin}$\;
+r = $normalizingFactor \cdot (max-min) + min$\;
+$x'=(u,a,r)$\;
+}
+}
+\caption{Normalize Ratings}
+\end{algorithm}
+
+After this algorithm is run, all ratings are in the range $[min,max]$ and are suited as input for the recommender algorithms. As a consequence, the friend relations also need to be updated. All relations containing one of the users removed beforehand are also removed. This leaves us with 92'770 of the original 92'834 ratings and 12'508 of the original 12'717 friend relations.
+
+\section{Collaborative Filtering vs. Social Collaborative Filtering}
+\label{cfvssocialcf} The first experiment was run on the normalized last.fm dataset with the goal of comparing the performance of different versions of collaborative filtering and social collaborative filtering algorithms. The main question was if the information contained in the social network of last.fm could be used to enhance the performance of collaborative filtering.
+
+\subsection{Collaborative Filtering}
+\label{sst:cf} The collaborative filtering algorithm was run with different parameters. It was quickly clear that in this particular setting, item-based collaborative filtering was not practicable. Calculating all user-user similarities for around 1'800 users(around 3'250'000 similarities) takes almost 100 times less time than calculating all item-item similarities for around 17'500 items (around 306'250'000 similarities), actually resulting in equal or even better performance. So the experiments focused on user-based collaborative filtering with different parameters.
+
+The parameters used in the experiments were:
+
+\begin{itemize}
+\item Similarity measure (Pearson correlation coefficient, cosine similarity)
+\item Prediction measure (Adjusted sum, weighted sum, adjusted-weighted sum)
+\item Determination of neighbourhood (Fixed size n: 1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 1500, 2000 / Similarity threshold $\lambda$: 0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+\end{itemize}
+
+Each possible combination of these parameters (2 x 3 x 23 = 138 combinations) was tested on 5 repetitions of 5-fold cross-validation, which gives a total of 2 x 3 x 23 x 5 x 5 = 3450 test runs. The RMSE results for each of the 138 combinations were averaged.
