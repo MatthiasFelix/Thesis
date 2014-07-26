@@ -1,19 +1,5 @@
-\chapter{Algorithms and Software}
-\label{c:algorithmssoftware} To study the effects of social network information on the performance of collaborative filtering and to analytically test different recommenders algorithms, the author of this thesis implemented a software solution. It is capable of running different recommender algorithms with finely tunable parameters on both real-world and artificially generated datasets. Given a social network, it is able to incorporate the information contained in the friends graph into the process of making predictions. It can also artificially generate both realistic social networks and rating data.
-
-\section{General Framework}
-\label{st:generalframework} The software is constructed as a simulation that can be run with different datasets. It takes as an input dataset a list of triples $(u, i, r)$, each of which specify the rating $r$ user $u$ has provided for item $i$. $u$ and $i$ have to be integers and can be viewed as ID's for specific users resp. items, while $r$ is the actual rating, which can be any real number. Additionally, if social network information is to be included in the recommender algorithm, an edge list of the graph representing the social network can be inputted. This is a list of tupels $(u_1,u_2)$ indicating that there is an edge between user $u_1$ and user $u_2$, which means they are friends.
-
-The program performs different steps:
-\begin{itemize}
-\item The parameter file is read and the necessary parameters are set. This is a text file that contains all relevant information and parameters. There one can specify which dataset to use, which algorithms to run on the data and which parameters and metrics to use.
-\item If a not yet existing artificial dataset is to be used, it is created. The network generation algorithm specified in section %blabla
-is run, followed by the rating generation (section %blabla
-). After the rating file has been generated, k-fold cross-validation is used to partition the ratings into training and test sets (section %blabla
-).
-\item Once all the input files are ready to be processed, they are read in and the test suite is run with all combinations of the specified parameters and metrics.
-\item The outputs of the algorithms are always the root mean squared error (RMSE) and the run time. These two measures are outputted to the console and, if desired, also written to a result text file that can later be used to further analyze or especially visualize the obtained results.
-\end{itemize}
+\chapter{Artificial Data Generation}
+\label{c:artificialdatageneration}
 
 \section{Artificial Network Generation}
 \label{st:artificialnetworkgeneration} There has been a decent amount of studies that analyzed the performance of social recommender algorithms with the help of real-world data. Examples include \cite{Groh_2007} who analyzed the social network of the german community Lokalisten \cite{Lokalisten}, or \cite{Liu_2010} who distributed a survey to users of Cyworld (a popular South Korean social network site) \cite{Cyworld}. The main problem is to obtain real-world data. Online social networking want to provide a certain amount of privacy for their users and they want users to trust them with their data. Additionally, there are also national laws concerning data protection and data security. For those reasons, it is often difficult to study real-world examples of social recommender systems. Amazon, Facebook and Netflix are examples of this situation.

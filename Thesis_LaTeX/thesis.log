@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.11)  24 JUL 2014 15:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.11)  26 JUL 2014 18:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -587,10 +587,10 @@ File: ./2-recommendersystemssocialnetworks/figures/SampleGraph.png Graphic file
 
 <use ./2-recommendersystemssocialnetworks/figures/SampleGraph.png>
 Package pdftex.def Info: ./2-recommendersystemssocialnetworks/figures/SampleGra
-ph.png used on input line 106.
+ph.png used on input line 108.
 (pdftex.def)             Requested size: 150.56305pt x 121.91171pt.
 
-Overfull \hbox (8.29927pt too wide) in paragraph at lines 106--108
+Overfull \hbox (8.29927pt too wide) in paragraph at lines 108--110
 [][]
  []
 
@@ -602,16 +602,19 @@ e (type png)
 
 <use ./2-recommendersystemssocialnetworks/figures/SampleGraph2.png>
 Package pdftex.def Info: ./2-recommendersystemssocialnetworks/figures/SampleGra
-ph2.png used on input line 110.
+ph2.png used on input line 112.
 (pdftex.def)             Requested size: 150.56305pt x 129.22807pt.
 
-Overfull \hbox (8.29927pt too wide) in paragraph at lines 110--112
+Overfull \hbox (8.29927pt too wide) in paragraph at lines 112--114
 [][]
  []
 
-[8 <./2-recommendersystemssocialnetworks/figures/SampleGraph.png> <./2-recommen
-dersystemssocialnetworks/figures/SampleGraph2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 130--133
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <./2-recommendersystemssocialnetworks/figures/SampleGraph.png> <./2-recomme
+ndersystemssocialnetworks/figures/SampleGraph2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 132--135
 
  []
 
@@ -621,70 +624,88 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--133
 
 ]
 Chapter 3.
-[11]
-Overfull \hbox (26.98923pt too wide) in paragraph at lines 19--20
+
+Overfull \hbox (26.98923pt too wide) in paragraph at lines 5--6
 \OT1/pfr/bx/n/10.95 mender al-go-rithms with the help of real-world data. Ex-am
 -ples in-clude [[]]
  []
 
 
-LaTeX Warning: Reference `st:graphproperties' on page 12 undefined on input lin
-e 22.
+LaTeX Warning: Reference `st:graphproperties' on page 11 undefined on input lin
+e 8.
 
-[12] [13] [14] [15]
-<./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png, id=100, 648.4225pt x
- 370.38374pt>
+[11] [12] [13] [14]
+<./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png, id=97, 648.4225pt x 
+370.38374pt>
 File: ./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png Graphic file (ty
 pe png)
  <use ./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png>
 Package pdftex.def Info: ./3-artificialdata/figures/FrequencyOfRatings_Lastfm.p
-ng used on input line 87.
+ng used on input line 73.
 (pdftex.def)             Requested size: 426.5953pt x 243.67975pt.
 
-Overfull \hbox (8.33975pt too wide) in paragraph at lines 87--89
+Overfull \hbox (8.33975pt too wide) in paragraph at lines 73--75
  [][] 
  []
 
-) (./4-experiments/experiments.tex [16 <./3-artificialdata/figures/FrequencyOfR
-atings_Lastfm.png>]
+) (./4-experiments/experiments.tex [15 <./3-artificialdata/figures/FrequencyOfR
+atings_Lastfm.png>] [16]
 Chapter 4.
 [17
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 15--17
+Underfull \hbox (badness 10000) in paragraph at lines 23--25
 
  []
 
-[18]) (./5-conclusion/conclusion.tex [19] [20
+[18]
+<./4-experiments/figures/USERBASED_N_V3.png, id=112, 803.0pt x 454.69875pt>
+File: ./4-experiments/figures/USERBASED_N_V3.png Graphic file (type png)
+
+<use ./4-experiments/figures/USERBASED_N_V3.png>
+Package pdftex.def Info: ./4-experiments/figures/USERBASED_N_V3.png used on inp
+ut line 58.
+(pdftex.def)             Requested size: 401.50146pt x 227.35574pt.
+
+<./4-experiments/figures/USERBASED_T_V3.png, id=113, 803.0pt x 454.69875pt>
+File: ./4-experiments/figures/USERBASED_T_V3.png Graphic file (type png)
+
+<use ./4-experiments/figures/USERBASED_T_V3.png>
+Package pdftex.def Info: ./4-experiments/figures/USERBASED_T_V3.png used on inp
+ut line 64.
+(pdftex.def)             Requested size: 401.50146pt x 227.35574pt.
+ [19] [20 <./4-experiments/figures/USERBASED_N_V3.png> <./4-experiments/figures
+/USERBASED_T_V3.png>])
+(./5-conclusion/conclusion.tex [21] [22
 
 
 
 ]
 Chapter 5.
-) (./thesis.bbl [21] [22
+) (./thesis.bbl [23] [24
 
 
 
-] [23]) (./section-appendix/appendix.tex [24]
+] [25]) (./section-appendix/appendix.tex [26]
 Appendix A.
-[25
+[27
 
 
 
-]) [26] (./thesis.lof)
+]) [28] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [27
+ [29
 
 
 
 
 
 
-] [28
+] [30
 
 
 
@@ -693,7 +714,7 @@ Appendix A.
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [29] (./thesis.aux)
+ [31] (./thesis.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 47.12pt have occurred.
@@ -709,10 +730,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7648 strings out of 493315
- 110546 string characters out of 6137904
- 224556 words of memory out of 5000000
- 10930 multiletter control sequences out of 15000+600000
+ 7661 strings out of 493315
+ 111032 string characters out of 6137904
+ 223591 words of memory out of 5000000
+ 10940 multiletter control sequences out of 15000+600000
  17215 words of font info for 67 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  46i,14n,47p,1781b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -731,10 +752,10 @@ xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
 live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
 /2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on thesis.pdf (37 pages, 305404 bytes).
+Output written on thesis.pdf (39 pages, 411227 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 134 compressed objects within 2 object streams
+ 208 PDF objects out of 1000 (max. 8388607)
+ 138 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

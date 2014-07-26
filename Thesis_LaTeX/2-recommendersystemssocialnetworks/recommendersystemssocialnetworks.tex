@@ -82,6 +82,8 @@ Once this neighbourhood set is determined, there exist different ways to compute
 \label{eq:adjustedweightedsum}
 \end{equation}
 
+Note that in all three approaches the sum is over all users in neighbourhood $N$. One has to take into account the fact that it is not certain that all users in $N$ have already rated item $j$. In fact, the sparser the rating matrix, the higher the probability that there are users who have not rated item $j$ and are therefore left out of the prediction calculation. The actual set of neighbours that influence $\hat{r}_i(j)$ can therefore be much smaller than $\lvert N \rvert$.
+
 \subsubsection{Item-based Collaborative Filtering}
 \label{ssst:itembasedcf} A different approach is item-based collaborative filtering. Instead of finding users with similar rating behaviour, this method looks for similarities between items. In contrast to content-based methods, no information about the actual content of the items is needed, but instead the rating profiles of the items across all users are considered. If a set of items similar to item $j$ can be found, the ratings user $i$ has given those items can be used to estimate $\hat{r}_i(j)$.
 
