@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.11)  26 JUL 2014 18:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.11)  27 JUL 2014 16:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -649,13 +649,13 @@ Overfull \hbox (8.33975pt too wide) in paragraph at lines 73--75
  []
 
 ) (./4-experiments/experiments.tex [15 <./3-artificialdata/figures/FrequencyOfR
-atings_Lastfm.png>] [16]
-Chapter 4.
-[17
+atings_Lastfm.png>] [16
 
 
 
 ]
+Chapter 4.
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 23--25
 
  []
@@ -678,13 +678,17 @@ ut line 64.
 (pdftex.def)             Requested size: 401.50146pt x 227.35574pt.
  [19] [20 <./4-experiments/figures/USERBASED_N_V3.png> <./4-experiments/figures
 /USERBASED_T_V3.png>])
-(./5-conclusion/conclusion.tex [21] [22
+(./5-conclusion/conclusion.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-]
+ [21]
+[22]
 Chapter 5.
-) (./thesis.bbl [23] [24
+) (./thesis.bbl [23
+
+
+
+] [24
 
 
 
@@ -730,10 +734,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7661 strings out of 493315
- 111032 string characters out of 6137904
- 223591 words of memory out of 5000000
- 10940 multiletter control sequences out of 15000+600000
+ 7664 strings out of 493315
+ 111071 string characters out of 6137904
+ 223624 words of memory out of 5000000
+ 10943 multiletter control sequences out of 15000+600000
  17215 words of font info for 67 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  46i,14n,47p,1781b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -752,7 +756,7 @@ xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
 live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
 /2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on thesis.pdf (39 pages, 411227 bytes).
+Output written on thesis.pdf (39 pages, 412499 bytes).
 PDF statistics:
  208 PDF objects out of 1000 (max. 8388607)
  138 compressed objects within 2 object streams
