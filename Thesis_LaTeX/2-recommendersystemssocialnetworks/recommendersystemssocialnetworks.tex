@@ -20,6 +20,9 @@ As a consequence of the various conditions and surroundings recommender systems 
 
 In user-based collaborative filtering, the idea is to find users with similar rating behaviour and predict ratings for an item based on these similar users' ratings for this item. Item-based collaborative filtering tries to find items that have been rated similarly across all users and then makes a prediction for an item based on the user's ratings for similar items.
 
+\subsubsection{Challenges}
+\label{ssst:challengescf} As already mentioned, some of the main challenges of content-based filtering can be avoided with this approach, however there occur other, new challenges. The main difficulty with collaborative filtering can be the extremely high computational cost. Calculating all user-similarities can be a serious issue, especially in domains with thousands of users and possibly millions of items.
+
 \subsection{Formal Framework}
 \label{ssst:formalframework} To mathematically describe the different algorithms and metrics that are used in the experiments, a formal framework is introduced here. Let $U = \{1,...,u\}$ denote the set of users and let $G = \{1,...,g\}$ denote the set of items. Let $r_i(j)$ denote the actual rating of user $i \in U$ for item $j \in G$. The ultimate task for every recommender system is to find a good estimate $\hat{r}_i(j)$ for an item $j$ that user $i$ has not rated yet. The closer $\hat{r}_i(j)$ is to the user's actual rating $r_i(j)$ (which exists even if the user has not explicitly rated the item yet; it should be seen as the actual valuation of the user for that item), the more accurate the recommendation is.
 
@@ -29,12 +32,12 @@ As mentioned above, there exist many aspects that contribute to the quality of a
 RMSE = \sqrt{\frac{1}{n} \sum_{i=1}^{n}(r_n - \hat{r}_n)^2}
 \label{eq:rmse}
 \end{equation}
-\newline
-\newline
-User-based collaborative filtering tries to find users that are similar to a particular user. The assumption is that similar users will be good predictors for the estimation of $\hat{r}_i(j)$. The first step is thus to find a measure of similarity between two users. There exist different measures, of which two commonly used ones will be presented.
 
-\subsubsection{Pearson Correlation Coefficient}
-\label{ssst:pearsoncorrelationcoefficient} The Pearson correlation coefficient measures the similarity between two users $i$ and $i'$. Let $\bar{r}_i$ denote the average rating over all items user $i$ has rated so far. $G_{ii'}$ ist the set of items both users have already rated. Then the Pearson correlation coefficient is calculated as follows:
+\subsubsection{Similarity Measures}
+\label{ssst:similaritymeasures} User-based collaborative filtering tries to find users that are similar to a particular user. The assumption is that similar users will be good predictors for the estimation of $\hat{r}_i(j)$. The first step is thus to find a measure of similarity between two users. There exist different measures, of which two commonly used ones will be presented.
+\newline
+
+\textbf{Pearson Correlation Coefficient} The Pearson correlation coefficient measures the similarity between two users $i$ and $i'$. Let $\bar{r}_i$ denote the average rating over all items user $i$ has rated so far. $G_{ii'}$ ist the set of items both users have already rated. Then the Pearson correlation coefficient is calculated as follows:
 
 \begin{equation}
 sim(i,i') = \frac{\sum_{j \in G_{ii'}}{(r_i(j)-\bar{r}_i)(r_{i'}(j)-\bar{r}_{i'})}}{\sqrt{\sum_{j \in G_{ii'}}{(r_i(j)-\bar{r}_i)^2}}\sqrt{\sum_{j \in G_{ii'}}{(r_{i'}(j)-\bar{r}_{i'})^2}}}
@@ -42,40 +45,41 @@ sim(i,i') = \frac{\sum_{j \in G_{ii'}}{(r_i(j)-\bar{r}_i)(r_{i'}(j)-\bar{r}_{i'}
 \end{equation}
 
 The pearson correlation coefficient results in a similarity value between $-1$ and $+1$.
+\newline
 
-\subsubsection{Cosine Similarity}
-\label{ssst:cosinesimilarity} A second similarity measure that is widely used to calculate how similar two users are is the cosine similarity. The cosine similarity calculates the similarity of orientation of two vectors. The two vectors $x_i$ and $x_{i'}$ in this case are the rating vectors of users $i$ and $i'$ respectively, containing all ratings $r_{i}(j)$ and $r_{i'}(j)$ respectively of the items in set $G_{ii'}$. The cosine similarity is then calculated as follows:
+\textbf{Cosine Similarity Coefficient} A second similarity measure that is widely used to calculate how similar two users are is the cosine similarity. The cosine similarity calculates the similarity of orientation of two vectors. The two vectors $x_i$ and $x_{i'}$ in this case are the rating vectors of users $i$ and $i'$ respectively, containing all ratings $r_{i}(j)$ and $r_{i'}(j)$ respectively of the items in set $G_{ii'}$. The cosine similarity is then calculated as follows:
 
 \begin{equation}
 sim(i,i') = \frac{\sum_{j \in G_{ii'}}{r_{i}(j)\cdot r_{i'}(j)}}{\sqrt{\sum_{j \in G_{ii'}}{{r_{i}^2}(j)}}\sqrt{\sum_{j \in G_{ii'}}{{r_{i'}^2}(j)}}}
 \label{eq:cosine}
 \end{equation}
 
-The similarities calculated with \eqref{eq:cosine} also lie in the range from $-1$ to $+1$.
+The similarities calculated with equation \eqref{eq:cosine} also lie in the range from $-1$ to $+1$.
 \newline
 
 Once all similarities $sim(i,i')$ for a user $i$ are calculated, the other users can be sorted by their similarity to user $i$. It makes sense to only consider the most similar users for the prediction of $\hat{r}_i(j)$, since their ratings correlate the most with user $i$'s ratings. The next step is thus to choose an appropriate subset of all users $i'$, which is called the \textit{neighbourhood} $N$ of a user. The size of this neighbourhood can be determined in different ways, it can either be a certain number (e.g. 50) or it can be determined through applying a threshold on the similarities (e.g. only include users with similarity greater than 0.5).
 
-Once this neighbourhood set is determined, there exist different ways to compute the estimated rating $\hat{r}_i(j)$. We consider two approaches and a third one that combines the first two.
+\subsubsection{Prediction Measures}
+\label{ssst:predictionmeasures} Once this neighbourhood set is determined, there exist different ways to compute the estimated rating $\hat{r}_i(j)$. We consider two approaches and a third one that combines the first two.
+\newline
 
-\subsubsection{Weighted Sum}
-\label{ssst:weightedsum} The weighted sum aggregation takes into account that more similar users should have a bigger influence on the prediction than less similar ones. To predict rating $\hat{r}_i(j)$, the rating for item $j$ of each user $i'$ in the determined neighbourhood $N$ is weighted with $sim(i,i')$:
+\textbf{Weighted Sum} The weighted sum aggregation takes into account that more similar users should have a bigger influence on the prediction than less similar ones. To predict rating $\hat{r}_i(j)$, the rating for item $j$ of each user $i'$ in the determined neighbourhood $N$ is weighted with $sim(i,i')$:
 
 \begin{equation}
 \hat{r}_i(j) = \frac{\sum_{i' \in N}{sim(i,i')\cdot r_{i'}(j)}}{\sum_{i' \in N}{sim(i,i')}}
 \label{eq:weightedsum}
 \end{equation}
+\newline
 
-\subsubsection{Adjusted Sum}
-\label{ssst:adjustedsum} A problem that the weighted sum aggregation does not take into account is that users might interpret the rating scale differently. Some users might generally give lower ratings than others. To account for this, the adjusted sum prediction uses the average rating $\bar{r}_{i'}$ of each user $i'$.
+\textbf{Adjusted Sum} A problem that the weighted sum aggregation does not take into account is that users might interpret the rating scale differently. Some users might generally give lower ratings than others. To account for this, the adjusted sum prediction uses the average rating $\bar{r}_{i'}$ of each user $i'$.
 
 \begin{equation}
 \hat{r}_i(j) = \bar{r}_i + \frac{\sum_{i' \in N}{r_{i'}(j)\cdot \bar{r}_{i'}}}{\mid N\mid}
 \label{eq:adjustedsum}
 \end{equation}
+\newline
 
-\subsubsection{Adjusted Weighted Sum}
-\label{ssst:adjustedweightedsum} The adjusted weighted sum combines both aspects; it weighs the users' ratings by their similarity and it adjusts the ratings with the average ratings:
+\textbf{Adjusted Weighted Sum} The adjusted weighted sum combines both aspects; it weighs the users' ratings by their similarity and it adjusts the ratings with the average ratings:
 
 \begin{equation}
 \hat{r}_i(j) =  \bar{r}_i + \frac{\sum_{i' \in N}{sim(i,i')\cdot (r_{i'}(j) - \bar{r}_{i'})}}{\sum_{i' \in N}{sim(i,i')}}
@@ -83,12 +87,6 @@ Once this neighbourhood set is determined, there exist different ways to compute
 \end{equation}
 
 Note that in all three approaches the sum is over all users in neighbourhood $N$. One has to take into account the fact that it is not certain that all users in $N$ have already rated item $j$. In fact, the sparser the rating matrix, the higher the probability that there are users who have not rated item $j$ and are therefore left out of the prediction calculation. The actual set of neighbours that influence $\hat{r}_i(j)$ can therefore be much smaller than $\lvert N \rvert$.
-
-\subsubsection{Item-based Collaborative Filtering}
-\label{ssst:itembasedcf} A different approach is item-based collaborative filtering. Instead of finding users with similar rating behaviour, this method looks for similarities between items. In contrast to content-based methods, no information about the actual content of the items is needed, but instead the rating profiles of the items across all users are considered. If a set of items similar to item $j$ can be found, the ratings user $i$ has given those items can be used to estimate $\hat{r}_i(j)$.
-
-\subsubsection{Challenges}
-\label{ssst:challengescf} As already mentioned, some of the main challenges of content-based filtering can be avoided with this approach, however there occur other, new challenges. The main difficulty with collaborative filtering can be the extremely high computational cost. Calculating all user- or item-similarities can be a serious issue, especially in domains with thousands of users and possibly millions of items.
 
 \subsection{Related work}
 \label{sst:rsrelatedwork} There is a vast variety of studies and papers that give a survey on the topic of recommender systems. \cite{Ricci_2011} give a good overview over existing approaches to recommender systems and explain in detail different properties of recommender algorithms. A recommender algorithm can be evaluated and compared to others with respect to these properties. By far the most used property to assess the quality of a recommender algorithm is its prediction accuracy. Since recommender algorithms aim at providing recommendations to users, it is safe to assume that users prefer algorithms that have a high prediction accuracy, that is they predict ratings that are close to the actual rating of a user.
@@ -100,7 +98,8 @@ Note that in all three approaches the sum is over all users in neighbourhood $N$
 
 Whereas in the past social network structures were often implicitly present, but hard to explicitly capture and analyze, the rise of the internet and the effects of globalization are responsible for the appearance of online social networks like Facebook or Twitter. These networks often are a good reflection of real social networks, with the big advantage that they can be empirically studied and analyzed.
 
-Social networks can be mathematically represented by graphs. A graph consists of a set of nodes $N$ and a set of edges $E$ which are dyadic links between two nodes. Graphs are often drawn with nodes as little circles and edges as connecting lines between the circles. The edges can either be undirected, meaning that the relationship is bi-directional, or they can be directed (drawn as arrows instead of lines) meaning that the relation goes only in one direction.
+\subsection{Formal Framework}
+\label{sst:formalframeworkgraphs} Social networks can be mathematically represented by graphs. A graph consists of a set of nodes $N$ and a set of edges $E$ which are dyadic links between two nodes. Graphs are often drawn with nodes as little circles and edges as connecting lines between the circles. The edges can either be undirected, meaning that the relationship is bi-directional, or they can be directed (drawn as arrows instead of lines) meaning that the relation goes only in one direction.
 
 \begin{figure}[!ht]
 \centering
@@ -116,9 +115,9 @@ Social networks can be mathematically represented by graphs. A graph consists of
 {An undirected and a directed graph, each with 5 nodes and 5 edges.}
 \end{figure}
 
-In the space of online social networks, a Twitter graph would be a directed graph because you can follow a person without this person following you. The Facebook social network would be represented as an undirected graph, since friendships are always bi-directional. For this thesis, we will only consider two-way friendships and thus we will always work with undirected graphs. Edges can also be weighted, with the weight of an edge indicating the strength of the tie between two nodes. This aspect is also beyond the scope of this thesis and edges will not be weighted, or in other words will all have the same weight 1.
+In the space of online social networks, a Twitter graph would be a directed graph because you can follow a person without this person following you. The Facebook social network would be represented as an undirected graph, since friendships are always bi-directional. For this thesis, we will only consider two-way friendships and thus we will always work with undirected graphs. Edges can also be weighted, with the weight of an edge indicating the strength of the tie between two nodes. This aspect is also not of importance in the networks studied in this thesis and therefore edges will not be weighted, or in other words will all have the same weight 1.
 
-\subsection{Graph notions and properties}
+\subsection{Graph Properties}
 \label{sst:graphproperties} Once an existing social network is transformed into its mathematical representation, a graph, we can analyze different properties of this graph in order to find out more about the structure of the network. Different properties of a graph are presented and also properties that are characteristic for real-world social networks will be explained. This will play a big role in the graph generation section, where the task is to generate networks with realistic social network properties.
 
 \textbf{Degree:} The degree of a node is the number of edges adjacent to it. In a social network where edges represent friendships the degree is the number of friends someone has.
@@ -130,7 +129,8 @@ In the space of online social networks, a Twitter graph would be a directed grap
 \textbf{Global clustering coefficient/Transitivity:} The clustering coefficient of a graph (also called transitivity) measures the tendence of nodes to cluster together and form cliques. A clique is a set of nodes where every node is connected to every other node. The clustering coefficient is defined as $\frac{3\:\times\:number\:of\:triangles}{number\:of\:connected\:triples}$, where a triangle is 3 nodes all connected with each other (a clique of size 3) and a connected triple is 3 nodes where at least one node is connected with both other nodes.
 
 There also exists a local clustering coefficient which measures how close one node's neighbours are to being a clique.
-\newline\newline
+\newline
+\newline
 These are 4 basic and very important graph properties. They can help to categorize graphs and to find typical patterns in certain categories of networks. 
 
 \subsection{Related Work}
