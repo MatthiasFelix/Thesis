@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.11)  27 JUL 2014 20:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.11)  30 JUL 2014 14:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -538,11 +538,11 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [7] [8
 
+Underfull \vbox (badness 2635) has occurred while \output is active []
 
-]
-(./1-introduction/introduction.tex
+ [7]
+[8] (./1-introduction/introduction.tex
 Chapter 1.
 
 LaTeX Font Warning: Font shape `OT1/pfr/m/n' in size <72> not available
@@ -557,24 +557,31 @@ LaTeX Font Warning: Font shape `OT1/pfr/bx/n' in size <72> not available
 
 
 
-] [2
 
 
-
-]
+] [2]
 Chapter 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 7--9
 
  []
 
-[3]
+[3
+
+
+
+]
 Overfull \hbox (45.6194pt too wide) in paragraph at lines 10--11
 \OT1/pfr/m/n/10.95 er-ate in, there ex-ist many dif-fer-ent ap-proaches and rec
 -om-men-da-tion tech-niques. [[]]
  []
 
-[4] [5]
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 31--35
+
+ []
+
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 54--56
 
  []
@@ -609,20 +616,17 @@ Overfull \hbox (8.29927pt too wide) in paragraph at lines 112--114
 [][]
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8 <./2-recommendersystemssocialnetworks/figures/SampleGraph.png> <./2-recomme
-ndersystemssocialnetworks/figures/SampleGraph2.png>]
+[8 <./2-recommendersystemssocialnetworks/figures/SampleGraph.png> <./2-recommen
+dersystemssocialnetworks/figures/SampleGraph2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 132--135
 
  []
 
-) (./3-artificialdata/artificialdata.tex [9] [10
+) (./3-artificialdata/artificialdata.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-]
+ [9]
+[10]
 Chapter 3.
 
 Overfull \hbox (26.98923pt too wide) in paragraph at lines 5--6
@@ -634,7 +638,11 @@ Overfull \hbox (26.98923pt too wide) in paragraph at lines 5--6
 LaTeX Warning: Reference `st:graphproperties' on page 11 undefined on input lin
 e 8.
 
-[11] [12] [13] [14]
+[11
+
+
+
+] [12] [13] [14]
 <./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png, id=97, 648.4225pt x 
 370.38374pt>
 File: ./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png Graphic file (ty
@@ -661,6 +669,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--25
  []
 
 [18]
+
+LaTeX Warning: Reference `ssst:userbasedcf' on page 19 undefined on input line 
+54.
+
 <./4-experiments/figures/USERBASED_N_V3.png, id=112, 803.0pt x 454.69875pt>
 File: ./4-experiments/figures/USERBASED_N_V3.png Graphic file (type png)
 
@@ -676,9 +688,13 @@ File: ./4-experiments/figures/USERBASED_T_V3.png Graphic file (type png)
 Package pdftex.def Info: ./4-experiments/figures/USERBASED_T_V3.png used on inp
 ut line 64.
 (pdftex.def)             Requested size: 401.50146pt x 227.35574pt.
- [19] [20 <./4-experiments/figures/USERBASED_N_V3.png> <./4-experiments/figures
-/USERBASED_T_V3.png>] [21])
-(./5-conclusion/conclusion.tex [22]
+
+
+LaTeX Warning: Reference `ssst:userbasedcf' on page 19 undefined on input line 
+71.
+
+[19] [20 <./4-experiments/figures/USERBASED_N_V3.png> <./4-experiments/figures/
+USERBASED_T_V3.png>] [21]) (./5-conclusion/conclusion.tex [22]
 Chapter 5.
 ) (./thesis.bbl [23
 
@@ -730,10 +746,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7664 strings out of 493315
- 111071 string characters out of 6137904
- 223624 words of memory out of 5000000
- 10943 multiletter control sequences out of 15000+600000
+ 7665 strings out of 493315
+ 111081 string characters out of 6137904
+ 223612 words of memory out of 5000000
+ 10944 multiletter control sequences out of 15000+600000
  17215 words of font info for 67 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  46i,14n,47p,1781b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -752,7 +768,7 @@ xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
 live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
 /2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on thesis.pdf (39 pages, 412979 bytes).
+Output written on thesis.pdf (39 pages, 414043 bytes).
 PDF statistics:
  208 PDF objects out of 1000 (max. 8388607)
  138 compressed objects within 2 object streams
