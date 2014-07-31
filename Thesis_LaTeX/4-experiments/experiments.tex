@@ -3,7 +3,7 @@
 
 \begin{enumerate}
 \item Different versions of user-based collaborative filtering are evaluated on the last.fm dataset.
-\item Different versions of social user-based collaborative filtering are evaluated on the last.fm dataset and compared to the conventional ones.
+\item Different versions of social user-based collaborative filtering are evaluated on the last.fm dataset and their performance is compared to the performance of the conventional ones.
 \item Different artificially generated networks and ratings are used to again compare collaborative filtering and social collaborative filtering and find conditions under which social collaborative filtering might perform better.
 \item The hypothesis that central users in communities might be better predictors was analyzed.
 \item The hypothesis that social collaborative filtering works better for certain users was analyzed.
@@ -41,17 +41,15 @@ $x'=(u,a,r)$\;
 
 After this algorithm is run, all ratings are in the range $[min,max]$ and are suited as input for the recommender algorithms. As a consequence, the friend relations also need to be updated. All relations containing one of the users removed beforehand are also removed. This leaves us with 92'770 of the original 92'834 ratings and 12'508 of the original 12'717 friend relations.
 
-\subsection{k-fold cross-validation}
+\subsection{K-fold Cross-Validation}
 \label{kfoldcrossvalidation} Cross-validation is a technique used in statistical analysis to evaluate the accuracy of a prediction model on a given dataset. The dataset is partitioned into a training set, which will be used to ``train'' the model or algorithm, and a test set, which will be used to measure the prediction accuracy.
 
 In k-fold cross-validation, the dataset is randomly split into $k$ subsets of equal size. One of the subsets will serve as the test set and the other $k-1$ will be used as the training set. This is repeated $k$ times, with each subset serving as test set exactly once. This method has the advantage over completely random splitting that each data point is guaranteed to be used in the test set (exacty once).
-
+%EXPERIMENT1
 \section{Experiment 1}
-\label{st:experiment1} The first experiment was run on the normalized last.fm dataset with the goal of comparing the performance of different versions of user-based collaborative filtering algorithms. In this particular setting, item-based collaborative filtering was not practicable. Calculating all user-user similarities for around 1'800 users (around 3'250'000 similarities) takes almost 100 times less time than calculating all item-item similarities for around 17'500 items (around 306'250'000 similarities), actually resulting in equal or even better performance.
+\label{st:experiment1} The first experiment was run on the normalized last.fm dataset with the goal of comparing the performance of different versions of user-based collaborative filtering algorithms. The dataset was split using 5-fold cross-validation. To adjust the cross-validation to this particular setting, the process was adjusted a little. Instead of randomly partitioning the 92'770 ratings into 5 subsets, this was done for every user's ratings seperately. This extra step was taken to ensure that for every user there is training data as well as test data.
 
-The dataset was split using 5-fold cross-validation. To adjust the cross-validation to this particular setting, the process was adjusted a little. Instead of randomly partitioning the 92'770 ratings into 5 subsets, this was done for every user's ratings seperately. This extra step was taken to ensure that for every user there is training data as well as test data.
-
-The two different similarity measures and the three prediction measures presented in \ref{ssst:userbasedcf} were tested in all possible combinations. The neighbourhood sizes were determined either by a fixed number $n$ (from 1 up to all users) or a similarity threshold $\lambda$ was applied (from 0.0 to 1.0). All resulting parameter combinations were applied to the 5-fold cross-validated dataset, and this was done 5 times, resulting in 25 runs for each parameter setting. The resulting RMSE's were averaged over those 25 runs. The results can be seen in \ref{f:userbasedn} and \ref{f:userbasedt}.
+The two different similarity measures and the three prediction measures presented in section \ref{sst:formalframework} were tested in all possible combinations. The neighbourhood sizes were determined either by a fixed number $n$ (from 1 up to all users) or a similarity threshold $\lambda$ was applied (from 0.0 to 1.0). All resulting parameter combinations were applied to the 5-fold cross-validated dataset, and this was done 5 times, resulting in 25 runs for each parameter setting. The resulting RMSE's were averaged over those 25 runs. The results can be seen in figures \ref{f:userbasedn} and \ref{f:userbasedt}.
 
 \begin{figure}[!ht]
 \centering
@@ -68,24 +66,30 @@ The two different similarity measures and the three prediction measures presente
 
 It can be seen that the differences between the different similarity measure/prediction measure combinations are relatively small. Averaged over all different neighbourhood options, the combination of cosine similarity and adjusted-weighted sum performs best. Looking at the prediction measures, one can quickly conclude that the consideration of the average rating of a user (as done by the adjusted sum) is more important and makes the predictions more accurate than the consideration of the weights. In fact, the adjusted sum performs almost as good as the adjusted-weighted sum.
 
-Looking at the shapes of all curves, two things stand out: The maximum at neighbourhood $n=50$ and the maximum at threshold $\lambda = 1.0$. At first sight, this is quite astonishing, since other studies have shown a local minimum at neighbourhoods of around 50. It seems weird that there is no such minimum, but instead a clear maximum. To explain these effects, one important realization is to understand that the size $n$ of the neighbourhood $N$ is not necessarily equal to the number of users included in the prediction calculation. As explained in \ref{ssst:userbasedcf}, out of all users in $N$, only the ones who have actually rated item $j$ can be included in the calculation. In sparse rating matrices, chances are that the actual set of users included in the prediction calculation is much smaller than $n$. For the last.fm dataset with 1'873 users and 17'612 items after normalization, there are 1'873 x 17'612 = 32'987'276 possible ratings of which only 92'770 are actually provided. The rating matrix thus has a density of only 0.3 \% or a sparsity of 99.7 \%. The results suggest that in a setting with very sparse rating matrices, larger neighbourhoods should be chosen so that enough users are included in the prediction.
+Looking at the shapes of all curves, two things stand out: The maximum at neighbourhood $n=50$ and the maximum at threshold $\lambda = 1.0$. At first sight, this is quite astonishing, since other studies have shown a local minimum at neighbourhoods of around 50. It seems weird that there is no such minimum, but instead a clear maximum. To explain these effects, one important realization is to understand that the size $n$ of the neighbourhood $N$ is not necessarily equal to the number of users included in the prediction calculation. As explained in section \ref{sst:formalframework}, out of all users in $N$, only the ones who have actually rated item $j$ can be included in the calculation. In sparse rating matrices, chances are that the actual set of users included in the prediction calculation is much smaller than $n$. For the last.fm dataset with 1'873 users and 17'612 items after normalization, there are 1'873 x 17'612 = 32'987'276 possible ratings of which only 92'770 are actually provided. The rating matrix thus has a density of only 0.3 \% or a sparsity of 99.7 \%. The results suggest that in a setting with very sparse rating matrices, larger neighbourhoods should be chosen so that enough users are included in the prediction.
 
 The dataset of last.fm unveils another characteristic that amplifies this effect: There are many items that have only received one rating. Of course, when the rating for one of these items falls into the test set and has to be predicted, there is no possible information from other users' ratings to take into account. In this case, the algorithm chooses as prediction just the average rating of user $i$ over all his ratings. The experiments showed that the average had to serve as prediction in ${}^1/_2$ of the predictions for a fixed neighbourhood of size 70 (with an average of only 1.87 users per prediction that had actually rated the item). The average of users actually included in the prediction hit 50 at $n = 1050$.
 
 The smaller actual neighbourhood sizes explain why the algorithm gets better with very large neighbourhoods, but they cannot be responsible for the good performance with very small neighbourhoods. The answer for the good performance of the algorithm with neighbourhoods < 10 lies in the performance of the average approach. This approach just returns a user's average over all his ratings as a prediction, and it actually performs pretty well on this dataset. The average RMSE over 5 5-fold cross-validations was 0.78. With very small neighbourhoods, a lot of averages have to be used, which makes the predictions better.
 
 In the case of a similarity threshold, the explanation has to be found elsewhere. There, the actual neighbourhoods often have a decent size. The problem of a similarity threshold of 1.0 is that only users whose ratings are perfectly correlated are included in the prediction. This is, with very few exceptions, only the case if the users have co-rated only one item and given it the same rating. Of course, the similarity of those users results to 1.0, but with only one co-rated item the meaningfulness of this number can be questioned. With a similarity threshold of 1.0, consequently a lot of the users in the neighbourhood are not necessarily very similar to user $i$, which explains the large RMSE for all prediction and similarity measures. In the experiments, the average number of co-rated items for threshold 1.0 was 1.00 while for threshold 0.9 it was 3.10.
-
+%EXPERIMENT2
 \section{Experiment 2}
-\label{st:experiment2} The second experiment was conducted to measure the influence of the inclusion of social network information on the performance of collaborative filtering. For this, different versions of social collaborative filtering were implemented and tested on the same dataset that was also used for experiment 1 (\ref{st:experiment1}). As prediction measure, the adjusted-weighted sum was used and the similarities between users were calculated with the cosine similarity coefficient.
+\label{st:experiment2} The second experiment was conducted to measure the influence of the inclusion of social network information on the performance of collaborative filtering. For this, different versions of social collaborative filtering were implemented and tested on the same dataset that was also used for experiment 1. As prediction measure, the adjusted-weighted sum was used and the similarities between users were calculated with the cosine similarity coefficient.
 
-As explained in \ref{st:socialrecommendersystems}, the main difference of social collaborative filtering in comparison to the conventional approach is the choice of the neighbourhood set $N$. Instead of using either a fixed size of the most similar users or applying a threshold, the users closest to user $i$ in the social network can be chosen as his neighbourhood. In this experiment, the friend graph of every user was traversed with a breadth-first search (BFS), and different levels of the resulting node tree were taken as neighbourhoods. If all nodes on level 1 are included, this corresponds to all direct friends of a user. Level 2 corresponds to the user's friends and all their friends, and so on. 
+As explained in section \ref{sst:socialcf}, the main difference of social collaborative filtering in comparison to the conventional approach is the choice of the neighbourhood set $N$. Instead of using either a fixed size of the most similar users or applying a threshold, the users closest to user $i$ in the social network can be chosen as his neighbourhood. In this experiment, the friend graph of every user was traversed with a breadth-first search (BFS), and different levels of the resulting node tree were taken as neighbourhoods. If all nodes with distance 1 are included, this corresponds to all direct friends of a user. Distance 2 corresponds to the user's friends and all their friends, and so on.
 
+\begin{figure}[!ht]
+\includegraphics[width=400px]{./4-experiments/figures/SOCIALUSERBASED.png}
+\label{f:socialuserbased}
+\caption{Results for social collaborative filtering}
+\end{figure}
+%EXPERIMENT3
 \section{Experiment 3}
 \label{st:experiment3}
-
+%EXPERIMENT4
 \section{Experiment 4}
 \label{st:experiment4}
-
+%EXPERIMENT5
 \section{Experiment 5}
 \label{st:experiment5}

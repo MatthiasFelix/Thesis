@@ -1,8 +1,8 @@
 \chapter{Artificial Data Generation}
 \label{c:artificialdatageneration}
-
+% NETWORK GENERATION
 \section{Artificial Network Generation}
-\label{st:artificialnetworkgeneration} There has been a decent amount of studies that analyzed the performance of social recommender algorithms with the help of real-world data. Examples include \cite{Groh_2007} who analyzed the social network of the german community Lokalisten \cite{Lokalisten}, or \cite{Liu_2010} who distributed a survey to users of Cyworld (a popular South Korean social network site) \cite{Cyworld}. The main problem is to obtain real-world data. Online social networking want to provide a certain amount of privacy for their users and they want users to trust them with their data. Additionally, there are also national laws concerning data protection and data security. For those reasons, it is often difficult to study real-world examples of social recommender systems. Amazon, Facebook and Netflix are examples of this situation.
+\label{st:artificialnetworkgeneration} There has been a decent amount of studies that analyzed the performance of social recommender algorithms with the help of real-world data. Examples include \cite{Groh_2007} who analyzed the social network of the german community Lokalisten \cite{Lokalisten}, or \cite{Liu_2010} who distributed a survey to users of Cyworld (a popular South Korean social network site) \cite{Cyworld}. But obtaining good and complete real-world data can be a difficult task. Online social networking want to provide a certain amount of privacy for their users and they want users to trust them with their data. Additionally, there are also national laws concerning data protection and data security. For those reasons, it is often difficult to study real-world examples of social recommender systems. Amazon, Facebook and Netflix are examples of this situation.
 
 While there is one suitable dataset from the music streaming platform last.fm (section %blabla
 ) that is used in this thesis, it is also desirable to have artificial datasets with adjustable parameters in order to study the performance of social recommender algorithms in different settings. Therefore an algorithm needs to be found that constructs graphs with properties of a social network, e.g. scale-freeness (few nodes with very high degree, many nodes with low degree), small world (a low average path length) and a high clustering coefficient (\ref{st:graphproperties}). Finally, social networks often have a clear community structure, which should also be found in the generated network.
@@ -59,20 +59,37 @@ The big disadvantage of this algorithm is that is runs in worst-case time $O(m^2
 \label{ssst:communitywalktrap} This is an algorithm proposed by \cite{Pons_2005}. Their approach is based on the assumption that random walks on networks tend to stay within communities, since there are many connections inside communities and only few between them. It runs in worst-case time $O(m n^2)$, but since most real-world networks are very sparse, it usually runs in $O(n^2\log n)$.
 
 \cite{Pons_2005} introduce a distance measure $r$ between two nodes, which is large if the nodes are in different communities and small otherwise. This distance is computed from the information given by random walks in the graph. The algorithm itself then is also an agglomerative one; it starts with $n$ communities containing one node each, and then merges communities based on their distance. At each step, the two communities are merged that minimize the mean of the squared distances between each node and its community.
-
+% RATING GENERATION
 \section{Artificial Rating Generation}
 \label{st:artificialratinggeneration} The generation of artificial ratings is a field that has not been in the focus of recent research like network generation. The application area of artificially generated ratings is very limited and mostly constricted to empiric research and experiments. In the next section, the design choices that were made are explained and justified in more detail.
 
 \subsection{Design Choices}
-\label{sst:designchoices} First, a look at the existing dataset that is used in this thesis (from last.fm, section %blabla
-) shall be taken. The rating set contains 92'834 ratings of 1'892 users on 17'632 artists. After normalization of the ratings (section %blabla
-), the rating distribution \ref{f:frequencyofratings} is very skewed to the left, indicating that users give most items a rather low rating and only few items have a very good rating. The outlier at rating 5 is due to the normalization process which is done in a way that normalizes each user's personal favorite artist to a rating of 5. Therefore in the specific setting of online music streaming, we can assume that users have one or a few favorite artists that they listen to significantly more than to all others.
+\label{sst:designchoices} First, a look at the existing dataset from last.fm that is used in this thesis shall be taken. The rating set contains 92'834 ratings of 1'892 users on 17'632 artists.The rating distribution (figure \ref{f:frequencyofratings}) is very skewed to the left, indicating that users give most items a rather low rating and only few items have a very good rating. The outlier at rating 5 is due to the normalization process which is done in a way that normalizes each user's personal favorite artist to a rating of 5. Therefore in the specific setting of online music streaming, we can assume that users have one or a few favorite artists that they listen to significantly more than to all others.
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=425px]{./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png}
+\includegraphics[width=325px]{./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png}
 \label{f:frequencyofratings}
 \caption{Frequency of ratings of the last.fm dataset}
 \end{figure}
 
-Since it is assumed and to be shown that there exists a certain correlation between friends' ratings, this also has to be included in the rating generation. Varying the degree of correlation will help to show if social network information can increase collaborative filtering performance.
+Since it is assumed and to be shown that there exists a certain correlation between friends' ratings, this also has to be taken into account for the rating generation. Varying the degree of correlation will help to show if social network information can increase collaborative filtering performance. Further, to create a realistic rating generation model, there needs to be some sort of quality differences between items, as well as different user and community tastes. For the algorithm, we will draw those three factors from an exponential distribution. It is realistic to assume that there are very few items of very high quality and a lot of low quality items, and the same goes for the tastes of individuals and groups.
+
+Furthermore, the number of ratings each user provides is assumed to follow a normal distribution. This distribution choice can not be verified or falsified in the last.fm dataset, since this set has been arranged so that almost every user has given 50 ratings.
+
+\subsection{The Algorithm}
+\label{sst:thealgorithm} The rating generation algorithm takes as starting point a previously generated social network (section \ref{st:artificialnetworkgeneration}) and the resulting community partition, resulting from applying a community detection algorithm that places every user in a single community. Once the number of users $n$ and the $k$ communities they belong to are known, every user $i$ is given a taste $n_i$ drawn from an exponential distribution. Let there be a total number of $t$ items, and every item $j$ is also given a quality $t_j$ drawn from an exponential distribution, as well as every community $c$ is given a community taste $k_c$. All these tastes are afterwards normalized to be in the range the creator wants the ratings to be (often $[0,1]$ or $[1,5]$).
+
+Before ratings are created, every user $i$ also receives a number of ratings $l_i$ he will give, which is drawn from a normal distribution. The mean and standard deviation of this normal distribution can be seen as parameters; they directly determine how sparse or how dense the resulting rating matrix will be.
+
+As it can be assumed that not only the ratings of users in the same community correlate, but also the set of items they have rated, each community also receives a community item set, with $q$ items, drawn randomly from the whole item set. The total number of items $t$ is a parameter of the algorithm as well as $q$. 
+
+The next step is to create for every user the specified number of ratings. User $i$'s rating on item $j$ depends on 3 factors: item $j$'s quality, user $i$'s personal taste and user $i$'s community's taste. It is determined by the following procedure:
+
+\begin{enumerate}
+\item Choose a user $i$.
+\item Randomly choose an item $j$. With probability $p$, choose it from the whole item set, and with probability $1-p$, choose it from user $i$'s community's item set.
+\item If the user has not already rated this item, calculate $r_i(j)$ as $a \cdot t_j + b \cdot n_i + c \cdot k_c$, with $a,b,c \in [0,1]$ and $a+b+c=1$. $r_i(j)$ is thus a convex combination of the three factors $t_j$, $n_i$ and $k_c$.
+\item Repeat steps 2 and 3 until user $i$ has $l_i$ ratings.
+\item Repeat steps 1 to 4 for all users.
+\end{enumerate}
