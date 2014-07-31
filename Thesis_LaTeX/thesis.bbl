@@ -48,6 +48,11 @@ Clauset, A., Newman, M.~E., and Moore, C. (2004).
 \newblock Finding community structure in very large networks.
 \newblock {\em Physical review E}, 70(6):066111.
 
+\bibitem[Easley and Kleinberg, 2010]{Easley_2010}
+Easley, D. and Kleinberg, J. (2010).
+\newblock Networks, crowds, and markets.
+\newblock {\em Cambridge University}.
+
 \bibitem[Ekstrand et~al., 2011]{Ekstrand_2011}
 Ekstrand, M.~D., Riedl, J.~T., and Konstan, J.~A. (2011).
 \newblock Collaborative filtering recommender systems.
@@ -92,6 +97,11 @@ Liu, F. and Lee, H.~J. (2010).
   performance.
 \newblock {\em Expert Systems with Applications}, 37(7):4772 -- 4778.
 
+\bibitem[Milgram, 1967]{Milgram_1967}
+Milgram, S. (1967).
+\newblock The small world problem.
+\newblock {\em Psychology today}, 2(1):60--67.
+
 \bibitem[Newman, 2004a]{Newman_2004_1}
 Newman, M.~E. (2004a).
 \newblock Detecting community structure in networks.
@@ -108,6 +118,11 @@ Newman, M.~E. (2006).
 \newblock Modularity and community structure in networks.
 \newblock {\em Proceedings of the National Academy of Sciences},
   103(23):8577--8582.
+
+\bibitem[Newman and Park, 2003]{Newman_2003}
+Newman, M.~E. and Park, J. (2003).
+\newblock Why social networks are different from other types of networks.
+\newblock {\em Physical Review E}, 68(3):036122.
 
 \bibitem[Pazzani and Billsus, 2007]{Pazzani_2007}
 Pazzani, M.~J. and Billsus, D. (2007).
@@ -129,6 +144,11 @@ Ricci, F., Rokach, L., and Shapira, B. (2011).
 Salton, G. and McGill, M.~J. (1983).
 \newblock {\em {Introduction to Modern Information Retrieval}}.
 \newblock McGraw-Hill, New York.
+
+\bibitem[Travers and Milgram, 1969]{Travers_1969}
+Travers, J. and Milgram, S. (1969).
+\newblock An experimental study of the small world problem.
+\newblock {\em Sociometry}, pages 425--443.
 
 \bibitem[Zaidi et~al., 2012]{Zaidi_2012}
 Zaidi, F., Sallaberry, A., Melan{\c{c}}on, G., et~al. (2012).

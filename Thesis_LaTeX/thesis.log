@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.11)  30 JUL 2014 15:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.11)  31 JUL 2014 13:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -634,19 +634,64 @@ Overfull \hbox (8.29927pt too wide) in paragraph at lines 111--113
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 121--123
+
+ []
+
+
 Underfull \vbox (badness 6332) has occurred while \output is active []
 
  [8 <./2-recommendersystemssocialnetworks/figures/SampleGraph.png> <./2-recomme
 ndersystemssocialnetworks/figures/SampleGraph2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 131--134
+Underfull \hbox (badness 10000) in paragraph at lines 124--126
 
  []
 
-) (./3-artificialdata/artificialdata.tex [9] [10
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--129
+
+ []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 130--132
 
-]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--140
+
+ []
+
+
+Underfull \vbox (badness 1137) has occurred while \output is active []
+
+ [9]
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--160
+
+ []
+
+
+Overfull \hbox (44.43315pt too wide) in paragraph at lines 161--163
+\OT1/pfr/bx/n/10.95 nomenon. This phe-nomenon was first stud-ied by [[]] and [[
+]]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--163
+
+ []
+
+[10] [11]) (./3-artificialdata/artificialdata.tex [12]
 Chapter 3.
 
 Overfull \hbox (26.98923pt too wide) in paragraph at lines 5--6
@@ -655,12 +700,16 @@ Overfull \hbox (26.98923pt too wide) in paragraph at lines 5--6
  []
 
 
-LaTeX Warning: Reference `st:graphproperties' on page 11 undefined on input lin
+LaTeX Warning: Reference `st:graphproperties' on page 13 undefined on input lin
 e 8.
 
-[11] [12] [13] [14]
-<./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png, id=97, 648.4225pt x 
-370.38374pt>
+[13
+
+
+
+] [14] [15] [16]
+<./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png, id=103, 648.4225pt x
+ 370.38374pt>
 File: ./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png Graphic file (ty
 pe png)
  <use ./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png>
@@ -672,24 +721,24 @@ Overfull \hbox (8.33975pt too wide) in paragraph at lines 73--75
  [][] 
  []
 
-) (./4-experiments/experiments.tex [15 <./3-artificialdata/figures/FrequencyOfR
-atings_Lastfm.png>] [16
+) (./4-experiments/experiments.tex [17 <./3-artificialdata/figures/FrequencyOfR
+atings_Lastfm.png>] [18
 
 
 
 ]
 Chapter 4.
-[17]
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 23--25
 
  []
 
-[18]
+[20]
 
-LaTeX Warning: Reference `ssst:userbasedcf' on page 19 undefined on input line 
+LaTeX Warning: Reference `ssst:userbasedcf' on page 21 undefined on input line 
 54.
 
-<./4-experiments/figures/USERBASED_N_V3.png, id=112, 803.0pt x 454.69875pt>
+<./4-experiments/figures/USERBASED_N_V3.png, id=118, 803.0pt x 454.69875pt>
 File: ./4-experiments/figures/USERBASED_N_V3.png Graphic file (type png)
 
 <use ./4-experiments/figures/USERBASED_N_V3.png>
@@ -697,7 +746,7 @@ Package pdftex.def Info: ./4-experiments/figures/USERBASED_N_V3.png used on inp
 ut line 58.
 (pdftex.def)             Requested size: 401.50146pt x 227.35574pt.
 
-<./4-experiments/figures/USERBASED_T_V3.png, id=113, 803.0pt x 454.69875pt>
+<./4-experiments/figures/USERBASED_T_V3.png, id=119, 803.0pt x 454.69875pt>
 File: ./4-experiments/figures/USERBASED_T_V3.png Graphic file (type png)
 
 <use ./4-experiments/figures/USERBASED_T_V3.png>
@@ -706,38 +755,39 @@ ut line 64.
 (pdftex.def)             Requested size: 401.50146pt x 227.35574pt.
 
 
-LaTeX Warning: Reference `ssst:userbasedcf' on page 19 undefined on input line 
+LaTeX Warning: Reference `ssst:userbasedcf' on page 21 undefined on input line 
 71.
 
-[19] [20 <./4-experiments/figures/USERBASED_N_V3.png> <./4-experiments/figures/
-USERBASED_T_V3.png>] [21]) (./5-conclusion/conclusion.tex [22]
+[21] [22 <./4-experiments/figures/USERBASED_N_V3.png> <./4-experiments/figures/
+USERBASED_T_V3.png>] [23]) (./5-conclusion/conclusion.tex [24]
 Chapter 5.
-) (./thesis.bbl [23
+) (./thesis.bbl [25
 
 
 
-] [24
+] [26
 
 
 
-] [25]) (./section-appendix/appendix.tex [26]
+] [27] [28]) (./section-appendix/appendix.tex [29]
+[30
+
+
+
+]
 Appendix A.
-[27
-
-
-
-]) [28] (./thesis.lof)
+[31]) [32] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [29
+ [33
 
 
 
 
 
 
-] [30
+] [34
 
 
 
@@ -746,7 +796,7 @@ Appendix A.
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [31] (./thesis.aux)
+ [35] (./thesis.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 47.12pt have occurred.
@@ -762,10 +812,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7662 strings out of 493315
- 111019 string characters out of 6137904
- 223578 words of memory out of 5000000
- 10941 multiletter control sequences out of 15000+600000
+ 7668 strings out of 493315
+ 111133 string characters out of 6137904
+ 223699 words of memory out of 5000000
+ 10947 multiletter control sequences out of 15000+600000
  17215 words of font info for 67 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  46i,14n,47p,1781b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -784,10 +834,10 @@ xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
 live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
 /2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on thesis.pdf (39 pages, 413609 bytes).
+Output written on thesis.pdf (43 pages, 424193 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
- 138 compressed objects within 2 object streams
+ 221 PDF objects out of 1000 (max. 8388607)
+ 147 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

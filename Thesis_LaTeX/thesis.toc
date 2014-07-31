@@ -12,28 +12,29 @@
 \contentsline {section}{\numberline {2.2}Social Networks}{7}
 \contentsline {subsection}{\numberline {2.2.1}Formal Framework}{8}
 \contentsline {subsection}{\numberline {2.2.2}Graph Properties}{9}
-\contentsline {subsection}{\numberline {2.2.3}Related Work}{9}
-\contentsline {section}{\numberline {2.3}Social Recommender Systems}{9}
-\contentsline {subsection}{\numberline {2.3.1}Social Collaborative Filtering}{9}
-\contentsline {chapter}{\numberline {3}Artificial Data Generation}{11}
-\contentsline {section}{\numberline {3.1}Artificial Network Generation}{11}
-\contentsline {subsection}{\numberline {3.1.1}Community Structure Detecting Algorithms}{12}
-\contentsline {subsubsection}{Minimum-cut}{13}
-\contentsline {subsubsection}{Greedy Modularity Optimization}{13}
-\contentsline {subsubsection}{Edge Betweenness}{14}
-\contentsline {subsubsection}{Community Walktrap}{14}
-\contentsline {section}{\numberline {3.2}Artificial Rating Generation}{15}
-\contentsline {subsection}{\numberline {3.2.1}Design Choices}{15}
-\contentsline {chapter}{\numberline {4}Experiments}{17}
-\contentsline {section}{\numberline {4.1}Experimental Setup}{17}
-\contentsline {subsection}{\numberline {4.1.1}Last.fm Dataset}{17}
-\contentsline {subsubsection}{Normalization and cleaning-up of the Dataset}{18}
-\contentsline {subsection}{\numberline {4.1.2}k-fold cross-validation}{19}
-\contentsline {section}{\numberline {4.2}Experiment 1}{19}
-\contentsline {section}{\numberline {4.3}Experiment 2}{21}
-\contentsline {section}{\numberline {4.4}Experiment 3}{22}
-\contentsline {section}{\numberline {4.5}Experiment 4}{22}
-\contentsline {section}{\numberline {4.6}Experiment 5}{22}
-\contentsline {chapter}{\numberline {5}Conclusion}{23}
-\contentsline {chapter}{\numberline {A}Appendix}{27}
-\contentsline {section}{\numberline {A.1}Lorem Ipsum}{27}
+\contentsline {subsection}{\numberline {2.2.3}Social Network Characteristics}{10}
+\contentsline {subsection}{\numberline {2.2.4}Related Work}{11}
+\contentsline {section}{\numberline {2.3}Social Recommender Systems}{11}
+\contentsline {subsection}{\numberline {2.3.1}Social Collaborative Filtering}{11}
+\contentsline {chapter}{\numberline {3}Artificial Data Generation}{13}
+\contentsline {section}{\numberline {3.1}Artificial Network Generation}{13}
+\contentsline {subsection}{\numberline {3.1.1}Community Structure Detecting Algorithms}{14}
+\contentsline {subsubsection}{Minimum-cut}{15}
+\contentsline {subsubsection}{Greedy Modularity Optimization}{15}
+\contentsline {subsubsection}{Edge Betweenness}{16}
+\contentsline {subsubsection}{Community Walktrap}{16}
+\contentsline {section}{\numberline {3.2}Artificial Rating Generation}{17}
+\contentsline {subsection}{\numberline {3.2.1}Design Choices}{17}
+\contentsline {chapter}{\numberline {4}Experiments}{19}
+\contentsline {section}{\numberline {4.1}Experimental Setup}{19}
+\contentsline {subsection}{\numberline {4.1.1}Last.fm Dataset}{19}
+\contentsline {subsubsection}{Normalization and cleaning-up of the Dataset}{20}
+\contentsline {subsection}{\numberline {4.1.2}k-fold cross-validation}{21}
+\contentsline {section}{\numberline {4.2}Experiment 1}{21}
+\contentsline {section}{\numberline {4.3}Experiment 2}{23}
+\contentsline {section}{\numberline {4.4}Experiment 3}{24}
+\contentsline {section}{\numberline {4.5}Experiment 4}{24}
+\contentsline {section}{\numberline {4.6}Experiment 5}{24}
+\contentsline {chapter}{\numberline {5}Conclusion}{25}
+\contentsline {chapter}{\numberline {A}Appendix}{31}
+\contentsline {section}{\numberline {A.1}Lorem Ipsum}{31}
