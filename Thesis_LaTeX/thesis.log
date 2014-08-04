@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.11)  31 JUL 2014 17:36
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.11)  3 AUG 2014 23:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -390,9 +390,6 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 
 LaTeX Warning: Label `f:simplegraph' multiply defined.
 
-
-LaTeX Warning: Label `f:userbasedt' multiply defined.
-
 )
 \openout1 = `thesis.aux'.
 
@@ -717,7 +714,7 @@ File: ./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png Graphic file (ty
 pe png)
  <use ./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png>
 Package pdftex.def Info: ./3-artificialdata/figures/FrequencyOfRatings_Lastfm.p
-ng used on input line 71.
+ng used on input line 69.
 (pdftex.def)             Requested size: 326.21994pt x 186.33868pt.
 
 [17 <./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png>])
@@ -750,43 +747,68 @@ ut line 62.
 (pdftex.def)             Requested size: 401.50146pt x 227.35574pt.
  [21] [22 <./4-experiments/figures/USERBASED_N_V3.png> <./4-experiments/figures
 /USERBASED_T_V3.png>] [23]
-<./4-experiments/figures/SOCIALUSERBASED.png, id=132, 648.4225pt x 370.38374pt>
-File: ./4-experiments/figures/SOCIALUSERBASED.png Graphic file (type png)
-<use ./4-experiments/figures/SOCIALUSERBASED.png>
-Package pdftex.def Info: ./4-experiments/figures/SOCIALUSERBASED.png used on in
-put line 83.
-(pdftex.def)             Requested size: 401.50146pt x 229.34166pt.
+<./4-experiments/figures/SOCIALUSERBASED_V2.png, id=132, 648.4225pt x 371.3875p
+t>
+File: ./4-experiments/figures/SOCIALUSERBASED_V2.png Graphic file (type png)
+ <use ./4-experiments/figures/SOCIALUSERBASED_V2.png>
+Package pdftex.def Info: ./4-experiments/figures/SOCIALUSERBASED_V2.png used on
+ input line 83.
+(pdftex.def)             Requested size: 401.50146pt x 229.96318pt.
+
+Overfull \hbox (46.26697pt too wide) in paragraph at lines 95--104
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--113
+
+ []
+
+[24 <./4-experiments/figures/SOCIALUSERBASED_V2.png>] [25]
+<./4-experiments/figures/Result2_50_066_033_033.png, id=140, 638.385pt x 323.20
+75pt>
+File: ./4-experiments/figures/Result2_50_066_033_033.png Graphic file (type png
 )
-(./5-conclusion/conclusion.tex [24 <./4-experiments/figures/SOCIALUSERBASED.png
->]
+ <use ./4-experiments/figures/Result2_50_066_033_033.png>
+Package pdftex.def Info: ./4-experiments/figures/Result2_50_066_033_033.png use
+d on input line 123.
+(pdftex.def)             Requested size: 401.50146pt x 203.27658pt.
+)
+(./5-conclusion/conclusion.tex
+Underfull \vbox (badness 2426) has occurred while \output is active []
+
+ [26 <./4-experiments/figures/Result2_50_066_033_033.png>] [27] [28
+
+
+
+]
 Chapter 5.
-) (./thesis.bbl [25
+) (./thesis.bbl [29] [30
 
 
 
-] [26
-
-
-
-] [27] [28]) (./section-appendix/appendix.tex [29]
-[30
+] [31] [32]) (./section-appendix/appendix.tex [33]
+[34
 
 
 
 ]
 Appendix A.
-[31]) [32] (./thesis.lof)
+[35]) [36] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [33
+ [37
 
 
 
 
 
 
-] [34
+] [38
 
 
 
@@ -795,7 +817,7 @@ Appendix A.
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [35] (./thesis.aux)
+ [39] (./thesis.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 47.12pt have occurred.
@@ -811,10 +833,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7674 strings out of 493315
- 111361 string characters out of 6137904
- 223712 words of memory out of 5000000
- 10952 multiletter control sequences out of 15000+600000
+ 7681 strings out of 493315
+ 111663 string characters out of 6137904
+ 224747 words of memory out of 5000000
+ 10958 multiletter control sequences out of 15000+600000
  17215 words of font info for 67 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  46i,14n,47p,1781b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -833,10 +855,10 @@ xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
 live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
 /2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on thesis.pdf (43 pages, 455181 bytes).
+Output written on thesis.pdf (47 pages, 483041 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
+ 237 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

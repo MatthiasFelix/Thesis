@@ -18,8 +18,6 @@ Social networks consist of groups of densely connected users, called communities
 \item While there are open connections, randomly draw two nodes that are not yet connected and that both still have at least one open connection. Merge the two nodes into one, lower both ``open connection'' attributes by 1 and randomly assign the new node one of the two attributes.
 \end{enumerate}
 
-There is a very popular open source library for network analysis called ``iGraph'' \cite{Igraph}. It is available as R package, python library or C library. The algorithm described above was written in C and with the help of Java's JNI (Java Native Interface) included in the java code. JNI makes it possible to directly call methods from C libraries in the Java code.
-
 \subsection{Community Structure Detecting Algorithms}
 \label{sst:communityalgorithms} As described above, social networks often reveal some sort of community structure, meaning there are groups of densely connected nodes and few connections between those groups. However, there is no mathematical definition for communities. Nevertheless, there exist different approaches to find community structure, of which the most important ones will be presented here.
 
@@ -69,8 +67,8 @@ The big disadvantage of this algorithm is that is runs in worst-case time $O(m^2
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=325px]{./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png}
-\label{f:frequencyofratings}
 \caption{Frequency of ratings of the last.fm dataset}
+\label{f:frequencyofratings}
 \end{figure}
 
 Since it is assumed and to be shown that there exists a certain correlation between friends' ratings, this also has to be taken into account for the rating generation. Varying the degree of correlation will help to show if social network information can increase collaborative filtering performance. Further, to create a realistic rating generation model, there needs to be some sort of quality differences between items, as well as different user and community tastes. For the algorithm, we will draw those three factors from an exponential distribution. It is realistic to assume that there are very few items of very high quality and a lot of low quality items, and the same goes for the tastes of individuals and groups.
@@ -82,7 +80,7 @@ Furthermore, the number of ratings each user provides is assumed to follow a nor
 
 Before ratings are created, every user $i$ also receives a number of ratings $l_i$ he will give, which is drawn from a normal distribution. The mean and standard deviation of this normal distribution can be seen as parameters; they directly determine how sparse or how dense the resulting rating matrix will be.
 
-As it can be assumed that not only the ratings of users in the same community correlate, but also the set of items they have rated, each community also receives a community item set, with $q$ items, drawn randomly from the whole item set. The total number of items $t$ is a parameter of the algorithm as well as $q$. 
+As it can be assumed that not only the ratings of users in the same community correlate, but also the set of items they have rated, each community also receives a community item set $Q$, with $q$ items, drawn randomly from the whole item set. The total number of items $t$ is a parameter of the algorithm as well as $q$. 
 
 The next step is to create for every user the specified number of ratings. User $i$'s rating on item $j$ depends on 3 factors: item $j$'s quality, user $i$'s personal taste and user $i$'s community's taste. It is determined by the following procedure:
 
