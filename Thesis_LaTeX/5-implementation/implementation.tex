@@ -1,0 +1,23 @@
+\chapter{Implementation}
+\label{c:implementation} For the experiments, the author of this thesis implemented a simulation software that is able to run and test different recommender algorithms on different datasets. It is also able to generate artificial data as described in chapter \ref{c:artificialdatageneration}. Although the software is built specifically for the purpose of this thesis, it is built in a modular design so that it can easily be reused and quickly adapted to run similar algorithms and simulations.
+\newline
+
+The software consists of 4 different basic parts. These parts will be presented quickly, without going into too much detail.
+\newline
+
+\textbf{Recommender Algorithms} There are different recommender algorithms, that all implement the same interface. Each recommender algorithm needs to implement only two methods, one that trains the algorithm when training data is provided, and a prediction method that returns a predicted value for an unknown rating. The recommender algorithms currently implemented are:
+
+\begin{itemize}
+\item User-based CF
+\item Item-based CF
+\item User-based social CF
+\item Average-based recommendation
+\end{itemize}
+
+The interface makes it very easy to add more algorithms.
+\newline
+
+
+\newline
+
+The software is written in Java. The social network and graph analysis parts are written in C and called by the Java code through the \textit{Java Native Interface} (JNI).
