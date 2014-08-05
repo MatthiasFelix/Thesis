@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+The style file: apalike.bst
+Database file #1: section-references/thesisbib.bib
+Warning--to sort, need author or key in Lastfm
+Warning--to sort, need author or key in Lokalisten
+Warning--to sort, need author or key in Cyworld
+Warning--to sort, need author or key in Grouplens
+Warning--to sort, need author or key in Igraph
+Warning--can't use both volume and number fields in Felfernig_2007
+Warning--can't use both author and editor fields in Ricci_2011
+Warning--empty journal in Zaidi_2012
+Warning--empty journal in Zheng_2008
+You've used 30 entries,
+            1935 wiz_defined-function locations,
+            673 strings with 8264 characters,
+and the built_in function-call counts, 11438 in all, are:
+= -- 1148
+> -- 370
+< -- 25
++ -- 127
+- -- 120
+* -- 933
+:= -- 1903
+add.period$ -- 93
+call.type$ -- 30
+change.case$ -- 205
+chr.to.int$ -- 29
+cite$ -- 44
+duplicate$ -- 477
+empty$ -- 854
+format.name$ -- 167
+if$ -- 2308
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 29
+newline$ -- 151
+num.names$ -- 75
+pop$ -- 190
+preamble$ -- 1
+purify$ -- 209
+quote$ -- 0
+skip$ -- 372
+stack$ -- 0
+substring$ -- 831
+swap$ -- 86
+text.length$ -- 9
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 172
+warning$ -- 9
+while$ -- 87
+width$ -- 0
+write$ -- 382
+(There were 9 warnings)

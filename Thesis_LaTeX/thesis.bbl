@@ -71,6 +71,11 @@ Fortunato, S. (2010).
 \newblock Community detection in graphs.
 \newblock {\em Physics Reports}, 486(3):75--174.
 
+\bibitem[Fortunato and Barthelemy, 2007]{Fortunato_2007}
+Fortunato, S. and Barthelemy, M. (2007).
+\newblock Resolution limit in community detection.
+\newblock {\em Proceedings of the National Academy of Sciences}, 104(1):36--41.
+
 \bibitem[Girvan and Newman, 2002]{Girvan_2002}
 Girvan, M. and Newman, M.~E. (2002).
 \newblock Community structure in social and biological networks.
