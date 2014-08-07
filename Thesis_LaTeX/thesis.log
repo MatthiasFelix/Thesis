@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.11)  6 AUG 2014 10:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.11)  7 AUG 2014 11:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -386,7 +386,11 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen172
 \Gin@req@width=\dimen173
 )
-No file thesis.aux.
+(./thesis.aux
+
+LaTeX Warning: Label `f:simplegraph' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -402,7 +406,7 @@ LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 \c@lstlisting=\count119
-(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count120
 \scratchdimen=\dimen174
@@ -525,15 +529,17 @@ LaTeX Font Warning: Font shape `OT1/pfr/bx/n' in size <32> not available
 
 
 
-]
-No file thesis.toc.
+] (./thesis.toc
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 3.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+) [7])
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
-[7] [8
-
-
-] (./1-introduction/introduction.tex
+ [8]
+(./1-introduction/introduction.tex
 Chapter 1.
 
 LaTeX Font Warning: Font shape `OT1/pfr/m/n' in size <72> not available
@@ -543,36 +549,15 @@ LaTeX Font Warning: Font shape `OT1/pfr/m/n' in size <72> not available
 LaTeX Font Warning: Font shape `OT1/pfr/bx/n' in size <72> not available
 (Font)              size <24.88> substituted on input line 1.
 
-
-LaTeX Warning: Citation `Zheng_2008' on page 1 undefined on input line 4.
-
-
-LaTeX Warning: Citation `Konstas_2009' on page 1 undefined on input line 4.
-
-
-LaTeX Warning: Citation `Liu_2010' on page 1 undefined on input line 4.
-
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 10.
-(/usr/local/texlive/2013/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-))
-(./2-recommendersystemssocialnetworks/recommendersystemssocialnetworks.tex
+) (./2-recommendersystemssocialnetworks/recommendersystemssocialnetworks.tex
 [1
+
+
 
 
 
 ] [2]
 Chapter 2.
-
-LaTeX Warning: Reference `c:experiments' on page 3 undefined on input line 2.
-
-
-LaTeX Warning: Reference `c:artificialdatageneration' on page 3 undefined on in
-put line 2.
-
-
-LaTeX Warning: Citation `Felfernig_2007' on page 3 undefined on input line 5.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 7--9
 
@@ -583,8 +568,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--9
 
 
 ]
-
-LaTeX Warning: Citation `Ricci_2011' on page 4 undefined on input line 10.
+Overfull \hbox (45.6194pt too wide) in paragraph at lines 10--11
+\OT1/pfr/m/n/10.95 er-ate in, there ex-ist many dif-fer-ent ap-proaches and rec
+-om-men-da-tion tech-niques. [[]]
+ []
 
 [4]
 Underfull \hbox (badness 10000) in paragraph at lines 37--39
@@ -595,9 +582,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--39
 Underfull \hbox (badness 10000) in paragraph at lines 47--49
 
  []
-
-
-LaTeX Warning: Reference `eq:cosine' on page 6 undefined on input line 57.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 57--59
@@ -618,13 +602,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--73
 Underfull \hbox (badness 10000) in paragraph at lines 79--81
 
  []
-
-
-LaTeX Warning: Citation `Ricci_2011' on page 7 undefined on input line 92.
-
-
-LaTeX Warning: Citation `Adomavicius_2005' on page 7 undefined on input line 94
-.
 
 [7]
 <./2-recommendersystemssocialnetworks/figures/SampleGraph.png, id=70, 269.005pt
@@ -694,16 +671,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--140
 Underfull \vbox (badness 1137) has occurred while \output is active []
 
  [9]
-
-LaTeX Warning: Citation `Lastfm' on page 10 undefined on input line 153.
-
-
-LaTeX Warning: Citation `Newman_2003' on page 10 undefined on input line 153.
-
-
-LaTeX Warning: Citation `Zaidi_2012' on page 10 undefined on input line 153.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 153--155
 
  []
@@ -714,83 +681,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--160
  []
 
 
-LaTeX Warning: Citation `Milgram_1967' on page 10 undefined on input line 161.
-
-
-LaTeX Warning: Citation `Travers_1969' on page 10 undefined on input line 161.
+Overfull \hbox (44.43315pt too wide) in paragraph at lines 161--163
+\OT1/pfr/bx/n/10.95 nomenon. This phe-nomenon was first stud-ied by [[]] and [[
+]]
+ []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 161--163
 
  []
 
-[10]
-
-LaTeX Warning: Reference `sst:communityalgorithms' on page 11 undefined on inpu
-t line 164.
-
-
-LaTeX Warning: Citation `Easley_2010' on page 11 undefined on input line 164.
-
-
-LaTeX Warning: Citation `Easley_2010' on page 11 undefined on input line 167.
-
-
-LaTeX Warning: Citation `Newman_2003' on page 11 undefined on input line 167.
-
-) (./3-artificialdata/artificialdata.tex [11] [12]
+[10] [11]) (./3-artificialdata/artificialdata.tex [12]
 Chapter 3.
 
-LaTeX Warning: Citation `Groh_2007' on page 13 undefined on input line 5.
-
-
-LaTeX Warning: Citation `Lokalisten' on page 13 undefined on input line 5.
-
-
-LaTeX Warning: Citation `Liu_2010' on page 13 undefined on input line 5.
-
-
-LaTeX Warning: Citation `Cyworld' on page 13 undefined on input line 5.
+Overfull \hbox (26.98923pt too wide) in paragraph at lines 5--6
+\OT1/pfr/bx/n/10.95 mender al-go-rithms with the help of real-world data. Ex-am
+-ples in-clude [[]]
+ []
 
 
 LaTeX Warning: Reference `st:graphproperties' on page 13 undefined on input lin
 e 8.
 
-
-LaTeX Warning: Citation `Zaidi_2012' on page 13 undefined on input line 10.
-
 [13
 
 
 
-] [14]
-
-LaTeX Warning: Citation `Brandes_2006' on page 15 undefined on input line 39.
-
-
-LaTeX Warning: Citation `Clauset_2004' on page 15 undefined on input line 39.
-
-
-LaTeX Warning: Citation `Clauset_2004' on page 15 undefined on input line 41.
-
-[15]
-
-LaTeX Warning: Citation `Girvan_2002' on page 16 undefined on input line 45.
-
-
-LaTeX Warning: Citation `Clauset_2004' on page 16 undefined on input line 45.
-
-
-LaTeX Warning: Citation `Pons_2005' on page 16 undefined on input line 57.
-
-
-LaTeX Warning: Citation `Pons_2005' on page 16 undefined on input line 59.
-
-
-LaTeX Warning: Reference `f:frequencyofratings' on page 16 undefined on input l
-ine 65.
-
-[16]
+] [14] [15] [16]
 <./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png, id=103, 648.4225pt x
  370.38374pt>
 File: ./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png Graphic file (ty
@@ -800,16 +717,9 @@ Package pdftex.def Info: ./3-artificialdata/figures/FrequencyOfRatings_Lastfm.p
 ng used on input line 69.
 (pdftex.def)             Requested size: 326.21994pt x 186.33868pt.
 
-
-LaTeX Warning: Reference `st:artificialnetworkgeneration' on page 17 undefined 
-on input line 79.
-
 [17 <./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png>])
 (./4-experiments/experiments.tex [18]
 Chapter 4.
-
-LaTeX Warning: Citation `Grouplens' on page 19 undefined on input line 16.
-
 [19
 
 
@@ -820,16 +730,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--25
  []
 
 [20]
-
-LaTeX Warning: Reference `sst:formalframework' on page 21 undefined on input li
-ne 52.
-
-
-LaTeX Warning: Reference `f:userbasedn' on page 21 undefined on input line 52.
-
-
-LaTeX Warning: Reference `f:userbasedt' on page 21 undefined on input line 52.
-
 <./4-experiments/figures/USERBASED_N_V3.png, id=118, 803.0pt x 454.69875pt>
 File: ./4-experiments/figures/USERBASED_N_V3.png Graphic file (type png)
 
@@ -845,17 +745,8 @@ File: ./4-experiments/figures/USERBASED_T_V3.png Graphic file (type png)
 Package pdftex.def Info: ./4-experiments/figures/USERBASED_T_V3.png used on inp
 ut line 62.
 (pdftex.def)             Requested size: 401.50146pt x 227.35574pt.
-
-
-LaTeX Warning: Reference `sst:formalframework' on page 21 undefined on input li
-ne 69.
-
-[21] [22 <./4-experiments/figures/USERBASED_N_V3.png> <./4-experiments/figures/
-USERBASED_T_V3.png>]
-
-LaTeX Warning: Reference `sst:socialcf' on page 23 undefined on input line 80.
-
-[23]
+ [21] [22 <./4-experiments/figures/USERBASED_N_V3.png> <./4-experiments/figures
+/USERBASED_T_V3.png>] [23]
 <./4-experiments/figures/SOCIALUSERBASED_V2.png, id=132, 648.4225pt x 371.3875p
 t>
 File: ./4-experiments/figures/SOCIALUSERBASED_V2.png Graphic file (type png)
@@ -863,14 +754,6 @@ File: ./4-experiments/figures/SOCIALUSERBASED_V2.png Graphic file (type png)
 Package pdftex.def Info: ./4-experiments/figures/SOCIALUSERBASED_V2.png used on
  input line 83.
 (pdftex.def)             Requested size: 401.50146pt x 229.96318pt.
-
-
-LaTeX Warning: Reference `f:socialuserbased' on page 24 undefined on input line
- 88.
-
-
-LaTeX Warning: Reference `st:experiment1' on page 24 undefined on input line 88
-.
 
 
 LaTeX Warning: Reference `experiment 1' on page 24 undefined on input line 90.
@@ -881,19 +764,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--92
  []
 
 [24 <./4-experiments/figures/SOCIALUSERBASED_V2.png>]
-
-LaTeX Warning: Reference `t:rmseruntimesocialcf' on page 25 undefined on input 
-line 111.
-
-
-LaTeX Warning: Reference `st:artificialnetworkgeneration' on page 25 undefined 
-on input line 116.
-
-
-LaTeX Warning: Reference `t:ratinggenerationparameters' on page 25 undefined on
- input line 116.
-
-
 Overfull \hbox (46.26697pt too wide) in paragraph at lines 120--129
  [] 
  []
@@ -906,15 +776,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--138
 
  []
 
-[25]
-
-LaTeX Warning: Reference `f:result01' on page 26 undefined on input line 142.
-
-[26]
-
-LaTeX Warning: Reference `f:result02' on page 27 undefined on input line 143.
-
-
+[25] [26]
 <./4-experiments/figures/Result2_50_066_033_033.png, id=143, 638.385pt x 323.20
 75pt>
 File: ./4-experiments/figures/Result2_50_066_033_033.png Graphic file (type png
@@ -941,31 +803,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--162
 
  []
 
-[27 <./4-experiments/figures/Result2_50_066_033_033.png>]
-
-LaTeX Warning: Reference `sst:communityalgorithms' on page 28 undefined on inpu
-t line 166.
-
-
-LaTeX Warning: Citation `Pons_2005' on page 28 undefined on input line 166.
-
-
-LaTeX Warning: Citation `Clauset_2004' on page 28 undefined on input line 166.
-
-
-LaTeX Warning: Citation `Fortunato_2007' on page 28 undefined on input line 166
-.
-
-
-LaTeX Warning: Reference `sst:graphproperties' on page 28 undefined on input li
-ne 167.
-
-[28 <./4-experiments/figures/Result2_100_00_033_033.png>]
-
-LaTeX Warning: Reference `f:influencersimilarity' on page 29 undefined on input
- line 174.
-
-
+[27 <./4-experiments/figures/Result2_50_066_033_033.png>] [28 <./4-experiments/
+figures/Result2_100_00_033_033.png>]
 <./4-experiments/figures/InfluencerSimilarities_2.png, id=153, 648.4225pt x 371
 .3875pt>
 File: ./4-experiments/figures/InfluencerSimilarities_2.png Graphic file (type p
@@ -974,78 +813,79 @@ ng)
 Package pdftex.def Info: ./4-experiments/figures/InfluencerSimilarities_2.png u
 sed on input line 177.
 (pdftex.def)             Requested size: 401.50146pt x 229.96318pt.
-)
-(./5-implementation/implementation.tex [29 <./4-experiments/figures/InfluencerS
-imilarities_2.png>] [30
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--187
+
+ []
+
+[29 <./4-experiments/figures/InfluencerSimilarities_2.png>]
+<./4-experiments/figures/UserErrors.png, id=159, 648.4225pt x 371.3875pt>
+File: ./4-experiments/figures/UserErrors.png Graphic file (type png)
+
+<use ./4-experiments/figures/UserErrors.png>
+Package pdftex.def Info: ./4-experiments/figures/UserErrors.png used on input l
+ine 191.
+(pdftex.def)             Requested size: 401.50146pt x 229.96318pt.
+) (./5-conclusion/conclusion.tex
+[30 <./4-experiments/figures/UserErrors.png>]
+Chapter 5.
+) (./thesis.bbl [31
+
+
+
+] [32
+
+
+
+] [33] [34]) (./section-appendix/appendix.tex [35]
+[36
 
 
 
 ]
-Chapter 5.
-
-LaTeX Warning: Reference `c:artificialdatageneration' on page 31 undefined on i
-nput line 2.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--4
-
- []
-
+Appendix A.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--7
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--20
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--20
+Underfull \hbox (badness 10000) in paragraph at lines 20--23
 
  []
 
-) (./6-conclusion/conclusion.tex [31] [32
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--23
+
+ []
+
+) [37] [38
 
 
-
-]
-Chapter 6.
-) (./thesis.bbl [33] [34
-
-
-
-] [35] [36]) (./section-appendix/appendix.tex [37]
-[38
-
-
-
-]
-Appendix A.
-[39]) [40]
-No file thesis.lof.
+] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
-[41
+ [39
 
 
 
 
-
-
-] [42
+] [40
 
 
 
 
-]
-No file thesis.lot.
+] (./thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
-[43] (./thesis.aux)
+ [41] (./thesis.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 47.12pt have occurred.
@@ -1057,14 +897,14 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7696 strings out of 493315
- 112412 string characters out of 6137904
- 224483 words of memory out of 5000000
- 10975 multiletter control sequences out of 15000+600000
+ 7703 strings out of 493315
+ 112470 string characters out of 6137904
+ 225839 words of memory out of 5000000
+ 10977 multiletter control sequences out of 15000+600000
  17215 words of font info for 67 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  46i,14n,47p,1781b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1083,10 +923,10 @@ xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
 live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
 /2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on thesis.pdf (51 pages, 527253 bytes).
+Output written on thesis.pdf (49 pages, 543060 bytes).
 PDF statistics:
- 254 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
+ 250 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

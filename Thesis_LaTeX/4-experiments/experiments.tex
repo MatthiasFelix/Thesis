@@ -182,4 +182,13 @@ The resulting similarities can be seen in figure \ref{f:influencersimilarity}. T
 These results are a clear indication that some users in communities have influence on the taste (and therefore on the rating behaviour) of other users in those communities. At $n=31$, the maximal similarity of 0.715 can be found, which is above the average rating similarity between users and their whole community (0.703). With this insight, one could possibly improve the social CF algorithm by taking into account information about centrality (e.g. by giving central users more weight in the prediction).
 %EXPERIMENT5
 \section{Experiment 5}
-\label{st:experiment5} The last research question that was analyzed was if there are users for which social CF works better than others. 
+\label{st:experiment5} The last experiment aimed to answer the question if there are users or groups of users for which social CF works better. After experiment 4 (section \ref{st:experiment4}) showed that there exist users that are better predictors than others because of their position and influence in the social network, the next question to ask is whether there are also positions in the network or factors that influence how well social CF performs for specific users in those positions.
+\newline
+
+To examine this question, the last.fm dataset was once again studied. The set was partitioned with 5-fold cross-validation and then conventional CF algorithms were run as well as social CF algorithms, each with different similarity thresholds from 0.0 to 1.0. Instead of calculating the average RMSE for a whole run as in previous experiments, RMSE's were collected for each user individually. Then, for each user, averages were taken over all conventional CF runs and over all social CF runs. The average social CF RMSE was subtracted from the average conventional CF RMSE for each user. Negative results imply that conventional CF works better for that user, while positive results imply that social CF works better. 
+
+\begin{figure}[!h]
+\includegraphics[width=400px]{./4-experiments/figures/UserErrors.png}
+\caption{Average conventional CF RMSE - average social CF RMSE of all users, sorted from lowest to highest}
+\label{f:usererrors}
+\end{figure}
