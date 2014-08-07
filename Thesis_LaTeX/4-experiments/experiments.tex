@@ -53,13 +53,13 @@ The two different similarity measures and the three prediction measures presente
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=400px]{./4-experiments/figures/USERBASED_N_V3.png}
+\includegraphics[width=400px]{./4-experiments/figures/USERBASED_N_V4.png}
 \caption{Results for neighbourhood}
 \label{f:userbasedn}
 \end{figure}
 
 \begin{figure}[!ht]
-\includegraphics[width=400px]{./4-experiments/figures/USERBASED_T_V3.png}
+\includegraphics[width=400px]{./4-experiments/figures/USERBASED_T_V4.png}
 \caption{Results for threshold}
 \label{f:userbasedt}
 \end{figure}
@@ -80,7 +80,7 @@ In the case of a similarity threshold, the explanation has to be found elsewhere
 As explained in section \ref{sst:socialcf}, the main difference of social collaborative filtering in comparison to the conventional approach is the choice of the neighbourhood set $N$. Instead of using either a fixed size of the most similar users or applying a threshold, the users closest to user $i$ in the social network can be chosen as his neighbourhood. In this experiment, the friend graph of every user was traversed with a breadth-first search (BFS), and different levels of the resulting node tree were taken as neighbourhoods. If all nodes with distance 1 are included, this corresponds to all direct friends of a user. Distance 2 corresponds to the user's friends and all their friends, and so on.
 
 \begin{figure}[!ht]
-\includegraphics[width=400px]{./4-experiments/figures/SOCIALUSERBASED_V2.png}
+\includegraphics[width=400px]{./4-experiments/figures/SOCIALUSERBASED_V3.png}
 \label{f:socialuserbased}
 \caption{Results for social collaborative filtering}
 \end{figure}
@@ -185,10 +185,14 @@ These results are a clear indication that some users in communities have influen
 \label{st:experiment5} The last experiment aimed to answer the question if there are users or groups of users for which social CF works better. After experiment 4 (section \ref{st:experiment4}) showed that there exist users that are better predictors than others because of their position and influence in the social network, the next question to ask is whether there are also positions in the network or factors that influence how well social CF performs for specific users in those positions.
 \newline
 
-To examine this question, the last.fm dataset was once again studied. The set was partitioned with 5-fold cross-validation and then conventional CF algorithms were run as well as social CF algorithms, each with different similarity thresholds from 0.0 to 1.0. Instead of calculating the average RMSE for a whole run as in previous experiments, RMSE's were collected for each user individually. Then, for each user, averages were taken over all conventional CF runs and over all social CF runs. The average social CF RMSE was subtracted from the average conventional CF RMSE for each user. Negative results imply that conventional CF works better for that user, while positive results imply that social CF works better. 
+To examine this question, the last.fm dataset was once again studied. The set was partitioned with 5-fold cross-validation and then conventional CF algorithms were run as well as social CF algorithms, each with different similarity thresholds from 0.0 to 1.0. Instead of calculating the average RMSE for a whole run as in previous experiments, RMSE's were collected for each user individually. Then, for each user, averages were taken over all conventional CF runs and over all social CF runs. The average social CF RMSE was subtracted from the average conventional CF RMSE for each user. Negative results imply that conventional CF works better for that user, while positive results imply that social CF works better. This error difference was stored for each user and users were sorted by their error difference, in ascending order. The result can be seen in figure \ref{f:usererrors}.
 
 \begin{figure}[!h]
 \includegraphics[width=400px]{./4-experiments/figures/UserErrors.png}
 \caption{Average conventional CF RMSE - average social CF RMSE of all users, sorted from lowest to highest}
 \label{f:usererrors}
 \end{figure}
+
+Figure \ref{f:usererrors} shows that with very few exceptions, the difference between CF and social CF RMSE's lies between -0.5 and 0.5. There are only 15 users with a difference $<$ -0.5 (the ones at the very left in figure \ref{f:usererrors}), and only 13 users with a difference $>$ 0.5 (the ones at the very right). The assumption that social CF might work better for users with many friends (central users) does not prove to be true, as there are central as well as decentral users on both ends of the scale.
+
+The RMSE differences are quite small overall, revealing no specific group of users for which social CF seems to work better than conventional CF. However, it is clear that in many settings, social CF will indeed work better for users that are in a community that influences the taste of its members.

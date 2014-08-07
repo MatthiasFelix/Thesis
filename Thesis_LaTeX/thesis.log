@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.11)  7 AUG 2014 11:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.11)  7 AUG 2014 19:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -730,30 +730,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--25
  []
 
 [20]
-<./4-experiments/figures/USERBASED_N_V3.png, id=118, 803.0pt x 454.69875pt>
-File: ./4-experiments/figures/USERBASED_N_V3.png Graphic file (type png)
+<./4-experiments/figures/USERBASED_N_V4.png, id=118, 903.375pt x 516.93124pt>
+File: ./4-experiments/figures/USERBASED_N_V4.png Graphic file (type png)
 
-<use ./4-experiments/figures/USERBASED_N_V3.png>
-Package pdftex.def Info: ./4-experiments/figures/USERBASED_N_V3.png used on inp
+<use ./4-experiments/figures/USERBASED_N_V4.png>
+Package pdftex.def Info: ./4-experiments/figures/USERBASED_N_V4.png used on inp
 ut line 56.
-(pdftex.def)             Requested size: 401.50146pt x 227.35574pt.
+(pdftex.def)             Requested size: 401.50146pt x 229.75366pt.
 
-<./4-experiments/figures/USERBASED_T_V3.png, id=119, 803.0pt x 454.69875pt>
-File: ./4-experiments/figures/USERBASED_T_V3.png Graphic file (type png)
+<./4-experiments/figures/USERBASED_T_V4.png, id=119, 903.375pt x 516.93124pt>
+File: ./4-experiments/figures/USERBASED_T_V4.png Graphic file (type png)
 
-<use ./4-experiments/figures/USERBASED_T_V3.png>
-Package pdftex.def Info: ./4-experiments/figures/USERBASED_T_V3.png used on inp
+<use ./4-experiments/figures/USERBASED_T_V4.png>
+Package pdftex.def Info: ./4-experiments/figures/USERBASED_T_V4.png used on inp
 ut line 62.
-(pdftex.def)             Requested size: 401.50146pt x 227.35574pt.
- [21] [22 <./4-experiments/figures/USERBASED_N_V3.png> <./4-experiments/figures
-/USERBASED_T_V3.png>] [23]
-<./4-experiments/figures/SOCIALUSERBASED_V2.png, id=132, 648.4225pt x 371.3875p
+(pdftex.def)             Requested size: 401.50146pt x 229.75366pt.
+ [21]
+Underfull \vbox (badness 1924) has occurred while \output is active []
+
+ [22 <./4-experiments/figures/USERBASED_N_V4.png> <./4-experiments/figures/USER
+BASED_T_V4.png>] [23]
+<./4-experiments/figures/SOCIALUSERBASED_V3.png, id=132, 903.375pt x 516.93124p
 t>
-File: ./4-experiments/figures/SOCIALUSERBASED_V2.png Graphic file (type png)
- <use ./4-experiments/figures/SOCIALUSERBASED_V2.png>
-Package pdftex.def Info: ./4-experiments/figures/SOCIALUSERBASED_V2.png used on
+File: ./4-experiments/figures/SOCIALUSERBASED_V3.png Graphic file (type png)
+ <use ./4-experiments/figures/SOCIALUSERBASED_V3.png>
+Package pdftex.def Info: ./4-experiments/figures/SOCIALUSERBASED_V3.png used on
  input line 83.
-(pdftex.def)             Requested size: 401.50146pt x 229.96318pt.
+(pdftex.def)             Requested size: 401.50146pt x 229.75366pt.
 
 
 LaTeX Warning: Reference `experiment 1' on page 24 undefined on input line 90.
@@ -763,7 +766,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--92
 
  []
 
-[24 <./4-experiments/figures/SOCIALUSERBASED_V2.png>]
+[24 <./4-experiments/figures/SOCIALUSERBASED_V3.png>]
 Overfull \hbox (46.26697pt too wide) in paragraph at lines 120--129
  [] 
  []
@@ -827,18 +830,18 @@ Package pdftex.def Info: ./4-experiments/figures/UserErrors.png used on input l
 ine 191.
 (pdftex.def)             Requested size: 401.50146pt x 229.96318pt.
 ) (./5-conclusion/conclusion.tex
-[30 <./4-experiments/figures/UserErrors.png>]
+[30 <./4-experiments/figures/UserErrors.png>] [31] [32
+
+
+
+]
 Chapter 5.
-) (./thesis.bbl [31
+) (./thesis.bbl [33] [34
 
 
 
-] [32
-
-
-
-] [33] [34]) (./section-appendix/appendix.tex [35]
-[36
+] [35] [36]) (./section-appendix/appendix.tex [37]
+[38
 
 
 
@@ -864,19 +867,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--23
 
  []
 
-) [37] [38
+) [39] [40
 
 
 ] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [39
+ [41
 
 
 
 
-] [40
+] [42
 
 
 
@@ -885,7 +888,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--23
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [41] (./thesis.aux)
+ [43] (./thesis.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 47.12pt have occurred.
@@ -903,7 +906,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  7703 strings out of 493315
  112470 string characters out of 6137904
- 225839 words of memory out of 5000000
+ 226839 words of memory out of 5000000
  10977 multiletter control sequences out of 15000+600000
  17215 words of font info for 67 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -923,10 +926,10 @@ xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
 live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
 /2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on thesis.pdf (49 pages, 543060 bytes).
+Output written on thesis.pdf (51 pages, 563108 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
- 160 compressed objects within 2 object streams
+ 256 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
