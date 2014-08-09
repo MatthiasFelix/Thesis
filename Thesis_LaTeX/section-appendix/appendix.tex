@@ -5,7 +5,7 @@
 \label{st:implementation} For the experiments, the author of this thesis implemented a simulation software that is able to run and test different recommender algorithms on different datasets. It is also able to generate artificial data as described in chapter \ref{c:artificialdatageneration}. Although the software is built specifically for the purpose of this thesis, it is built in a modular design so that it can easily be reused and quickly adapted to run similar algorithms and simulations.
 \newline
 
-The software consists of 4 different basic parts. These parts will be presented quickly, without going into too much detail.
+The different parts and modules of the software will be presented here, without going into too much detail.
 \newline
 
 \textbf{Recommender Algorithms} There are different recommender algorithms, that all implement the same interface. Each recommender algorithm needs to implement only two methods, one that trains the algorithm when training data is provided, and a prediction method that returns a predicted value for an unknown rating. The recommender algorithms currently implemented are:
@@ -19,6 +19,35 @@ The software consists of 4 different basic parts. These parts will be presented 
 
 The interface makes it very easy to add more algorithms.
 \newline
+
+\textbf{Similarity and Prediction Measures} All the similarity and prediction measures presented and used in the thesis (see section \ref{ssst:similaritymeasures}) are implemented. These are:
+
+\begin{itemize}
+\item Similarity measures:
+\begin{itemize}
+\item Cosine similarity
+\item Pearson correlation
+\end{itemize}
+\item Prediction measures:
+\begin{itemize}
+\item Adjusted sum
+\item Weighted sum
+\item Adjusted-weighted sum
+\end{itemize}
+\end{itemize}
+
+This list can also easily be extended by other measures.
 \newline
 
-The software is written in Java. The social network and graph analysis parts are written in C and called by the Java code through the \textit{Java Native Interface} (JNI).
+\textbf{Simulation Running Application} The core of the software is the application that actually runs simulations of recommender systems. One can choose which recommender algorithms to run with which similarity and prediction measures, what neighbourhood determination to use and on what datasets to run the simulations. If needed, the outputs (RMSE and runtime of each algorithm) are written to a text file and can be further processed.
+
+As inputs, the simulation accepts rating lists in the form of $(user,item,rating)$-tuples. For social CF algorithms, social networks in the form of $(user_i,user_j)$-tuples are accepted. The ratings can also be partitioned using k-fold cross-validation (see section \ref{sst:kfoldcrossvalidation}).
+\newline
+
+\textbf{Artificial Data Generation} The software is capable of generating artificial social networks as well as artificial rating data. The algorithms are implemented as described in chapter \ref{c:artificialdatageneration}.
+\newline
+
+\textbf{Centrality Testing} This module is dedicated to the testing of different users' centrality and their influence on their community. It measures the rating correlation between users and influential people in their community. This module was built for experiment 4 (section \ref{st:experiment4}).
+\newline
+
+The software is written in Java. The social network and graph analysis parts are written in C and called by the Java code through the \textit{Java Native Interface} (JNI). Git was used for version control.

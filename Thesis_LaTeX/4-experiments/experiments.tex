@@ -42,7 +42,7 @@ $x'=(u,a,r)$\;
 After this algorithm is run, all ratings are in the range $[min,max]$ and are suited as input for the recommender algorithms. As a consequence, the friend relations also need to be updated. All relations containing one of the users removed beforehand are also removed. This leaves us with 92'770 of the original 92'834 ratings and 12'508 of the original 12'717 friend relations.
 
 \subsection{K-fold Cross-Validation}
-\label{kfoldcrossvalidation} Cross-validation is a technique used in statistical analysis to evaluate the accuracy of a prediction model on a given dataset. The dataset is partitioned into a training set, which will be used to ``train'' the model or algorithm, and a test set, which will be used to measure the prediction accuracy.
+\label{sst:kfoldcrossvalidation} Cross-validation is a technique used in statistical analysis to evaluate the accuracy of a prediction model on a given dataset. The dataset is partitioned into a training set, which will be used to ``train'' the model or algorithm, and a test set, which will be used to measure the prediction accuracy.
 
 In k-fold cross-validation, the dataset is randomly split into $k$ subsets of equal size. One of the subsets will serve as the test set and the other $k-1$ will be used as the training set. This is repeated $k$ times, with each subset serving as test set exactly once. This method has the advantage over completely random splitting that each data point is guaranteed to be used in the test set (exacty once).
 %EXPERIMENT1
@@ -196,3 +196,27 @@ To examine this question, the last.fm dataset was once again studied. The set wa
 Figure \ref{f:usererrors} shows that with very few exceptions, the difference between CF and social CF RMSE's lies between -0.5 and 0.5. There are only 15 users with a difference $<$ -0.5 (the ones at the very left in figure \ref{f:usererrors}), and only 13 users with a difference $>$ 0.5 (the ones at the very right). The assumption that social CF might work better for users with many friends (central users) does not prove to be true, as there are central as well as decentral users on both ends of the scale.
 
 The RMSE differences are quite small overall, revealing no specific group of users for which social CF seems to work better than conventional CF. However, it is clear that in many settings, social CF will indeed work better for users that are in a community that influences the taste of its members.
+%DISCUSSION
+\section{Discussion}
+\label{st:discussion} The experiments that were conducted showed the behaviour of CF and social CF in different situations and settings. The most important and interesting take-aways will be discussed in this section.
+\newline
+
+First, it appears that the cosine similarity measure performs slightly better than the pearson correlation similarity measure. Although both measures are very similar, the algorithms using cosine similarity perform a bit better, except in situations with very small neighbourhoods. However, the differences are not very large and the general behaviour of both measure seems to be the same. \cite{Lathia_2008} even stated that in their analysis of similarity measures, using a random similarity measure sometimes yielded better results than using one of the popular approaches (also see \cite{Amatriain_2011}).
+
+Comparing the different prediction measures, the experiments suggest that the weighing of the ratings with the users' similarities does not affect the prediction as much as adjusting it to the average ratings. Using the adjusted sum yields almost the same results as using the adjusted-weighted sum, while using only the weighted sum results in worse performance.
+
+A very important point to consider when using neighbourhood-based algorithms is the sparsity of the rating matrix. As already highlighted in experiment 1, a sparse rating matrix can lead to the effect of actually having very few users included in the prediction calculation, which worsens the performance of CF and social CF algorithms. This problem is known as new-user or new-item problem (also see section \ref{ssst:challengescf}), and it is a known challenge of the CF approach to make predictions in environments with very sparse rating matrices.
+
+\begin{figure}[!h]
+\includegraphics[width=400px]{./4-experiments/figures/CFvsSocialCF_01.png}
+\caption{Best CF vs best social CF performances}
+\label{f:cfvssocialcf}
+\end{figure}
+
+Comparing conventional and social CF directly shows that both approaches work similarly well on the last.fm dataset. Figure \ref{f:cfvssocialcf} shows for both CF and social CF their best algorithm at each threshold, resulting in a (purely theoretical) mixed algorithm that chooses at each threshold the algorithm with the settings that performs best. The social CF algorithms have the edge at every threshold, with the largest difference at threshold 1.0. This is due to the performance of the \textit{Distance 1}-algorithm, which actually gets better at threshold 1.0 (see section \ref{st:experiment2}).
+\newline
+
+Experiment 3 showed that the use of social CF can enhance performance in settings where community taste has a stronger influence (see section \ref{st:experiment3}). Although this experiment was performed on artificially generated datasets, the network and rating generation algorithms produce data similar to real-world datasets, and therefore the results strongly indicate that the algorithms would behave similarly in certain real-world settings.
+\newline
+
+The last two experiments analyzed the positions of certain users in the network, showing that central users might indeed be better predictors than others. The existence of a rating correlation between users and the \textit{influencers} of their community will have to be further analyzed on other real-world data. The last.fm dataset already revealed this correlation, but there are certainly recommender systems where the social network has more importance than in this specific music streaming environment (e.g. holiday recommendations).

@@ -5,7 +5,7 @@
 The software consists of 4 different basic parts. These parts will be presented quickly, without going into too much detail.
 \newline
 
-\textbf{Recommender Algorithms} There are different recommender algorithms, that all implement the same interface. Each recommender algorithm needs to implement only two methods, one that trains the algorithm when training data is provided, and a prediction method that returns a predicted value for an unknown rating. The recommender algorithms currently implemented are:
+\textbf{Recommender Algorithms} There are different recommender algorithms that all implement the same interface. Each recommender algorithm needs to implement only two methods, one that trains the algorithm when training data is provided, and a prediction method that returns a predicted value for an unknown rating. The recommender algorithms currently implemented are:
 
 \begin{itemize}
 \item User-based CF
@@ -16,6 +16,8 @@ The software consists of 4 different basic parts. These parts will be presented 
 
 The interface makes it very easy to add more algorithms.
 \newline
+
+\textbf{Similarity and Prediction Measures} All the similarity and prediction measures presented and used in the thesis (see section \ref{ssst:similaritymeasures} and \ref{ssst:predictionmeasures}) are implemented. 
 \newline
 
 The software is written in Java. The social network and graph analysis parts are written in C and called by the Java code through the \textit{Java Native Interface} (JNI).

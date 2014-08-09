@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.11)  7 AUG 2014 19:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.11)  9 AUG 2014 19:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -525,7 +525,11 @@ LaTeX Font Warning: Font shape `OT1/pfr/m/n' in size <32> not available
 LaTeX Font Warning: Font shape `OT1/pfr/bx/n' in size <32> not available
 (Font)              size <24.88> substituted on input line 1.
 
-) [5] [6
+) (./section-abstract/zusammenfassung.tex [5] [6
+
+
+
+]) [7] [8
 
 
 
@@ -534,11 +538,11 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 3.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) [7])
+) [9])
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [8]
+ [10]
 (./1-introduction/introduction.tex
 Chapter 1.
 
@@ -593,18 +597,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--65
 
  []
 
-
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 71--73
 
  []
 
-[6]
+
 Underfull \hbox (badness 10000) in paragraph at lines 79--81
 
  []
 
 [7]
-<./2-recommendersystemssocialnetworks/figures/SampleGraph.png, id=70, 269.005pt
+<./2-recommendersystemssocialnetworks/figures/SampleGraph.png, id=76, 269.005pt
  x 217.81375pt>
 File: ./2-recommendersystemssocialnetworks/figures/SampleGraph.png Graphic file
  (type png)
@@ -619,7 +623,7 @@ Overfull \hbox (8.29927pt too wide) in paragraph at lines 107--109
  []
 
 
-<./2-recommendersystemssocialnetworks/figures/SampleGraph2.png, id=72, 254.9525
+<./2-recommendersystemssocialnetworks/figures/SampleGraph2.png, id=78, 254.9525
 pt x 218.8175pt>
 File: ./2-recommendersystemssocialnetworks/figures/SampleGraph2.png Graphic fil
 e (type png)
@@ -638,11 +642,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--123
 
  []
 
-
-Underfull \vbox (badness 6332) has occurred while \output is active []
-
- [8 <./2-recommendersystemssocialnetworks/figures/SampleGraph.png> <./2-recomme
-ndersystemssocialnetworks/figures/SampleGraph2.png>]
+[8 <./2-recommendersystemssocialnetworks/figures/SampleGraph.png> <./2-recommen
+dersystemssocialnetworks/figures/SampleGraph2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 124--126
 
  []
@@ -708,7 +709,7 @@ e 8.
 
 
 ] [14] [15] [16]
-<./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png, id=103, 648.4225pt x
+<./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png, id=110, 648.4225pt x
  370.38374pt>
 File: ./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png Graphic file (ty
 pe png)
@@ -730,7 +731,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--25
  []
 
 [20]
-<./4-experiments/figures/USERBASED_N_V4.png, id=118, 903.375pt x 516.93124pt>
+<./4-experiments/figures/USERBASED_N_V4.png, id=124, 903.375pt x 516.93124pt>
 File: ./4-experiments/figures/USERBASED_N_V4.png Graphic file (type png)
 
 <use ./4-experiments/figures/USERBASED_N_V4.png>
@@ -738,7 +739,7 @@ Package pdftex.def Info: ./4-experiments/figures/USERBASED_N_V4.png used on inp
 ut line 56.
 (pdftex.def)             Requested size: 401.50146pt x 229.75366pt.
 
-<./4-experiments/figures/USERBASED_T_V4.png, id=119, 903.375pt x 516.93124pt>
+<./4-experiments/figures/USERBASED_T_V4.png, id=125, 903.375pt x 516.93124pt>
 File: ./4-experiments/figures/USERBASED_T_V4.png Graphic file (type png)
 
 <use ./4-experiments/figures/USERBASED_T_V4.png>
@@ -750,7 +751,7 @@ Underfull \vbox (badness 1924) has occurred while \output is active []
 
  [22 <./4-experiments/figures/USERBASED_N_V4.png> <./4-experiments/figures/USER
 BASED_T_V4.png>] [23]
-<./4-experiments/figures/SOCIALUSERBASED_V3.png, id=132, 903.375pt x 516.93124p
+<./4-experiments/figures/SOCIALUSERBASED_V3.png, id=138, 903.375pt x 516.93124p
 t>
 File: ./4-experiments/figures/SOCIALUSERBASED_V3.png Graphic file (type png)
  <use ./4-experiments/figures/SOCIALUSERBASED_V3.png>
@@ -780,7 +781,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--138
  []
 
 [25] [26]
-<./4-experiments/figures/Result2_50_066_033_033.png, id=143, 638.385pt x 323.20
+<./4-experiments/figures/Result2_50_066_033_033.png, id=149, 638.385pt x 323.20
 75pt>
 File: ./4-experiments/figures/Result2_50_066_033_033.png Graphic file (type png
 )
@@ -789,7 +790,7 @@ Package pdftex.def Info: ./4-experiments/figures/Result2_50_066_033_033.png use
 d on input line 148.
 (pdftex.def)             Requested size: 401.50146pt x 203.27658pt.
 
-<./4-experiments/figures/Result2_100_00_033_033.png, id=144, 648.4225pt x 367.3
+<./4-experiments/figures/Result2_100_00_033_033.png, id=150, 648.4225pt x 367.3
 725pt>
 File: ./4-experiments/figures/Result2_100_00_033_033.png Graphic file (type png
 )
@@ -808,7 +809,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--162
 
 [27 <./4-experiments/figures/Result2_50_066_033_033.png>] [28 <./4-experiments/
 figures/Result2_100_00_033_033.png>]
-<./4-experiments/figures/InfluencerSimilarities_2.png, id=153, 648.4225pt x 371
+<./4-experiments/figures/InfluencerSimilarities_2.png, id=160, 648.4225pt x 371
 .3875pt>
 File: ./4-experiments/figures/InfluencerSimilarities_2.png Graphic file (type p
 ng)
@@ -822,21 +823,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--187
  []
 
 [29 <./4-experiments/figures/InfluencerSimilarities_2.png>]
-<./4-experiments/figures/UserErrors.png, id=159, 648.4225pt x 371.3875pt>
+<./4-experiments/figures/UserErrors.png, id=165, 648.4225pt x 371.3875pt>
 File: ./4-experiments/figures/UserErrors.png Graphic file (type png)
 
 <use ./4-experiments/figures/UserErrors.png>
 Package pdftex.def Info: ./4-experiments/figures/UserErrors.png used on input l
 ine 191.
 (pdftex.def)             Requested size: 401.50146pt x 229.96318pt.
-) (./5-conclusion/conclusion.tex
-[30 <./4-experiments/figures/UserErrors.png>] [31] [32
+ [30 <./4-experiments/figures/UserErrors.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 201--203
+
+ []
 
 
+<./4-experiments/figures/CFvsSocialCF_01.png, id=170, 903.375pt x 516.93124pt>
+File: ./4-experiments/figures/CFvsSocialCF_01.png Graphic file (type png)
 
-]
+<use ./4-experiments/figures/CFvsSocialCF_01.png>
+Package pdftex.def Info: ./4-experiments/figures/CFvsSocialCF_01.png used on in
+put line 211.
+(pdftex.def)             Requested size: 401.50146pt x 229.75366pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--218
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--221
+
+ []
+
+) (./5-conclusion/conclusion.tex [31] [32 <./4-experiments/figures/CFvsSocialCF
+_01.png>]
 Chapter 5.
-) (./thesis.bbl [33] [34
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--4
+
+ []
+
+) (./thesis.bbl [33
+
+
+
+] [34
 
 
 
@@ -858,23 +891,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--10
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--23
+Underfull \hbox (badness 10000) in paragraph at lines 20--22
+
+ []
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--23
+Underfull \hbox (badness 10000) in paragraph at lines 44--46
 
  []
 
-) [39] [40
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
+
+ []
 
 
-] (./thesis.lof)
+Underfull \hbox (badness 10000) in paragraph at lines 50--52
+
+ []
+
+) [40] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
  [41
+
+
 
 
 
@@ -904,10 +951,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7703 strings out of 493315
- 112470 string characters out of 6137904
- 226839 words of memory out of 5000000
- 10977 multiletter control sequences out of 15000+600000
+ 7718 strings out of 493315
+ 112964 string characters out of 6137904
+ 226937 words of memory out of 5000000
+ 10989 multiletter control sequences out of 15000+600000
  17215 words of font info for 67 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  46i,14n,47p,1781b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -926,10 +973,10 @@ xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
 live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
 /2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on thesis.pdf (51 pages, 563108 bytes).
+Output written on thesis.pdf (53 pages, 600427 bytes).
 PDF statistics:
- 256 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
+ 264 PDF objects out of 1000 (max. 8388607)
+ 168 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
