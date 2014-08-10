@@ -9,7 +9,7 @@
 \contentsline {subsubsection}{Similarity Measures}{5}
 \contentsline {subsubsection}{Prediction Measures}{6}
 \contentsline {subsection}{\numberline {2.1.4}Related work}{7}
-\contentsline {section}{\numberline {2.2}Social Networks}{8}
+\contentsline {section}{\numberline {2.2}Social Networks}{7}
 \contentsline {subsection}{\numberline {2.2.1}Formal Framework}{8}
 \contentsline {subsection}{\numberline {2.2.2}Graph Properties}{9}
 \contentsline {subsection}{\numberline {2.2.3}Social Network Characteristics}{10}
