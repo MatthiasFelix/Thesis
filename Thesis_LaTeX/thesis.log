@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.11)  9 AUG 2014 19:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.11)  10 AUG 2014 17:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -553,14 +553,19 @@ LaTeX Font Warning: Font shape `OT1/pfr/m/n' in size <72> not available
 LaTeX Font Warning: Font shape `OT1/pfr/bx/n' in size <72> not available
 (Font)              size <24.88> substituted on input line 1.
 
-) (./2-recommendersystemssocialnetworks/recommendersystemssocialnetworks.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--17
+
+ []
+
 [1
 
 
 
 
 
-] [2]
+]) (./2-recommendersystemssocialnetworks/recommendersystemssocialnetworks.tex [
+2]
 Chapter 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 7--9
@@ -973,7 +978,7 @@ xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
 live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
 /2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on thesis.pdf (53 pages, 600427 bytes).
+Output written on thesis.pdf (53 pages, 601014 bytes).
 PDF statistics:
  264 PDF objects out of 1000 (max. 8388607)
  168 compressed objects within 2 object streams
