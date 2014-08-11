@@ -37,11 +37,6 @@ Amatriain, X., Jaimes, A., Oliver, N., and Pujol, J.~M. (2011).
 \newblock Data mining methods for recommender systems.
 \newblock In {\em Recommender Systems Handbook}, pages 39--71. Springer.
 
-\bibitem[Arias et~al., 2012]{Arias_2012}
-Arias, J. J.~P., Vilas, A.~F., and Redondo, R. P.~D. (2012).
-\newblock {\em Recommender systems for the social web}, volume~32.
-\newblock Springer.
-
 \bibitem[Brandes et~al., 2006]{Brandes_2006}
 Brandes, U., Delling, D., Gaertler, M., G{\"o}rke, R., Hoefer, M., Nikoloski,
   Z., and Wagner, D. (2006).
@@ -58,23 +53,12 @@ Easley, D. and Kleinberg, J. (2010).
 \newblock Networks, crowds, and markets.
 \newblock {\em Cambridge University}.
 
-\bibitem[Ekstrand et~al., 2011]{Ekstrand_2011}
-Ekstrand, M.~D., Riedl, J.~T., and Konstan, J.~A. (2011).
-\newblock Collaborative filtering recommender systems.
-\newblock {\em Foundations and Trends in Human-Computer Interaction},
-  4(2):81--173.
-
 \bibitem[Felfernig et~al., 2007]{Felfernig_2007}
 Felfernig, A., Isak, K., Szabo, K., and Zachar, P. (2007).
 \newblock The vita financial services sales support environment.
 \newblock In {\em PROCEEDINGS OF THE NATIONAL CONFERENCE ON ARTIFICIAL
   INTELLIGENCE}, volume~22, page 1692. Menlo Park, CA; Cambridge, MA; London;
   AAAI Press; MIT Press; 1999.
-
-\bibitem[Fortunato, 2010]{Fortunato_2010}
-Fortunato, S. (2010).
-\newblock Community detection in graphs.
-\newblock {\em Physics Reports}, 486(3):75--174.
 
 \bibitem[Fortunato and Barthelemy, 2007]{Fortunato_2007}
 Fortunato, S. and Barthelemy, M. (2007).
@@ -93,11 +77,6 @@ Groh, G. and Ehmig, C. (2007).
   social filtering.
 \newblock In {\em Proceedings of the 2007 international ACM conference on
   Supporting group work}, pages 127--136. ACM.
-
-\bibitem[Herlocker et~al., 2004]{Herlocker_2004}
-Herlocker, J.~L., Konstan, J.~A., Terveen, L.~G., and Riedl, J.~T. (2004).
-\newblock Evaluating collaborative filtering recommender systems.
-\newblock {\em ACM Transactions on Information Systems (TOIS)}, 22(1):5--53.
 
 \bibitem[Konstas et~al., 2009]{Konstas_2009}
 Konstas, I., Stathopoulos, V., and Jose, J.~M. (2009).
@@ -124,17 +103,6 @@ Milgram, S. (1967).
 \newblock The small world problem.
 \newblock {\em Psychology today}, 2(1):60--67.
 
-\bibitem[Newman, 2004a]{Newman_2004_1}
-Newman, M.~E. (2004a).
-\newblock Detecting community structure in networks.
-\newblock {\em The European Physical Journal B-Condensed Matter and Complex
-  Systems}, 38(2):321--330.
-
-\bibitem[Newman, 2004b]{Newman_2004_2}
-Newman, M.~E. (2004b).
-\newblock Fast algorithm for detecting community structure in networks.
-\newblock {\em Physical review E}, 69(6):066133.
-
 \bibitem[Newman, 2006]{Newman_2006}
 Newman, M.~E. (2006).
 \newblock Modularity and community structure in networks.
@@ -150,11 +118,6 @@ Newman, M.~E. and Park, J. (2003).
 Parkes, D.~C. and Seuken, S. (2013).
 \newblock {\em Economics and Computation}.
 
-\bibitem[Pazzani and Billsus, 2007]{Pazzani_2007}
-Pazzani, M.~J. and Billsus, D. (2007).
-\newblock Content-based recommendation systems.
-\newblock In {\em The adaptive web}, pages 325--341. Springer.
-
 \bibitem[Pons and Latapy, 2005]{Pons_2005}
 Pons, P. and Latapy, M. (2005).
 \newblock Computing communities in large networks using random walks.
@@ -165,11 +128,6 @@ Pons, P. and Latapy, M. (2005).
 Ricci, F., Rokach, L., and Shapira, B. (2011).
 \newblock {\em Introduction to Recommender Systems Handbook}, pages 1--35.
 \newblock Springer US.
-
-\bibitem[Salton and McGill, 1983]{Salton_1983}
-Salton, G. and McGill, M.~J. (1983).
-\newblock {\em {Introduction to Modern Information Retrieval}}.
-\newblock McGraw-Hill, New York.
 
 \bibitem[Travers and Milgram, 1969]{Travers_1969}
 Travers, J. and Milgram, S. (1969).

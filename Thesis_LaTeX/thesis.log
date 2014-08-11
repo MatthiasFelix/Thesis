@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.11)  10 AUG 2014 23:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.11)  11 AUG 2014 10:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -580,32 +580,32 @@ Overfull \hbox (45.6194pt too wide) in paragraph at lines 10--11
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 37--39
+Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 47--49
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--59
+Underfull \hbox (badness 10000) in paragraph at lines 59--61
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--65
+Underfull \hbox (badness 10000) in paragraph at lines 65--67
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 71--73
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--81
+Underfull \hbox (badness 10000) in paragraph at lines 81--83
 
  []
 
@@ -617,10 +617,10 @@ File: ./2-recommendersystemssocialnetworks/figures/SampleGraph.png Graphic file
 
 <use ./2-recommendersystemssocialnetworks/figures/SampleGraph.png>
 Package pdftex.def Info: ./2-recommendersystemssocialnetworks/figures/SampleGra
-ph.png used on input line 105.
+ph.png used on input line 107.
 (pdftex.def)             Requested size: 150.56305pt x 121.91171pt.
 
-Overfull \hbox (8.29927pt too wide) in paragraph at lines 105--106
+Overfull \hbox (8.29927pt too wide) in paragraph at lines 107--108
 [][] 
  []
 
@@ -632,88 +632,83 @@ e (type png)
 
 <use ./2-recommendersystemssocialnetworks/figures/SampleGraph2.png>
 Package pdftex.def Info: ./2-recommendersystemssocialnetworks/figures/SampleGra
-ph2.png used on input line 108.
+ph2.png used on input line 110.
 (pdftex.def)             Requested size: 150.56305pt x 129.22807pt.
 
-Overfull \hbox (8.29927pt too wide) in paragraph at lines 108--109
+Overfull \hbox (8.29927pt too wide) in paragraph at lines 110--111
 [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 120--122
-
- []
-
-
-Underfull \vbox (badness 5036) has occurred while \output is active []
-
- [8 <./2-recommendersystemssocialnetworks/figures/SampleGraph.png> <./2-recomme
-ndersystemssocialnetworks/figures/SampleGraph2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 123--125
+[8 <./2-recommendersystemssocialnetworks/figures/SampleGraph.png> <./2-recommen
+dersystemssocialnetworks/figures/SampleGraph2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--128
+Underfull \hbox (badness 10000) in paragraph at lines 125--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--131
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--136
+Underfull \hbox (badness 10000) in paragraph at lines 131--133
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--139
+Underfull \hbox (badness 10000) in paragraph at lines 136--138
 
  []
 
 
-Underfull \vbox (badness 1137) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 139--141
 
- [9]
-Underfull \hbox (badness 10000) in paragraph at lines 152--154
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 156--158
 
  []
 
 
-Overfull \hbox (20.38376pt too wide) in paragraph at lines 157--159
+Overfull \hbox (20.38376pt too wide) in paragraph at lines 161--163
 \OT1/pfr/bx/n/10.95 peo-ple with only few con-nec-tions, for a de-tailed ex-pla
 -na-tion see [[]])
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--159
+Underfull \hbox (badness 10000) in paragraph at lines 161--163
 
  []
 
 
-Overfull \hbox (44.43315pt too wide) in paragraph at lines 160--162
+Overfull \hbox (44.43315pt too wide) in paragraph at lines 164--166
 \OT1/pfr/bx/n/10.95 nomenon. This phe-nomenon was first stud-ied by [[]] and [[
 ]]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--162
+Underfull \hbox (badness 10000) in paragraph at lines 164--166
 
  []
 
 [10] [11]) (./3-artificialdata/artificialdata.tex [12]
 Chapter 3.
 
-Overfull \hbox (26.98923pt too wide) in paragraph at lines 5--6
-\OT1/pfr/bx/n/10.95 mender al-go-rithms with the help of real-world data. Ex-am
--ples in-clude [[]]
+Overfull \hbox (6.7571pt too wide) in paragraph at lines 7--8
+[]\OT1/pfr/bx/n/10.95 While there is one suit-able dataset from the mu-sic stre
+am-ing plat-form last.fm [[]]
  []
 
 
-LaTeX Warning: Reference `st:graphproperties' on page 13 undefined on input lin
-e 8.
+Underfull \hbox (badness 10000) in paragraph at lines 13--15
+
+ []
 
 [13
 
@@ -726,7 +721,7 @@ File: ./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png Graphic file (ty
 pe png)
  <use ./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png>
 Package pdftex.def Info: ./3-artificialdata/figures/FrequencyOfRatings_Lastfm.p
-ng used on input line 69.
+ng used on input line 74.
 (pdftex.def)             Requested size: 326.21994pt x 186.33868pt.
 
 [17 <./3-artificialdata/figures/FrequencyOfRatings_Lastfm.png>])
@@ -736,18 +731,13 @@ Chapter 4.
 
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 23--25
-
- []
-
-[20]
+] [20]
 <./4-experiments/figures/USERBASED_N_V4.png, id=124, 903.375pt x 516.93124pt>
 File: ./4-experiments/figures/USERBASED_N_V4.png Graphic file (type png)
 
 <use ./4-experiments/figures/USERBASED_N_V4.png>
 Package pdftex.def Info: ./4-experiments/figures/USERBASED_N_V4.png used on inp
-ut line 56.
+ut line 49.
 (pdftex.def)             Requested size: 401.50146pt x 229.75366pt.
 
 <./4-experiments/figures/USERBASED_T_V4.png, id=125, 903.375pt x 516.93124pt>
@@ -755,39 +745,57 @@ File: ./4-experiments/figures/USERBASED_T_V4.png Graphic file (type png)
 
 <use ./4-experiments/figures/USERBASED_T_V4.png>
 Package pdftex.def Info: ./4-experiments/figures/USERBASED_T_V4.png used on inp
-ut line 62.
+ut line 55.
 (pdftex.def)             Requested size: 401.50146pt x 229.75366pt.
- [21]
-Underfull \vbox (badness 1924) has occurred while \output is active []
+ [21 <./4-experiments/figures/USERBASED_N_V4.png>]
+Underfull \vbox (badness 2012) has occurred while \output is active []
 
- [22 <./4-experiments/figures/USERBASED_N_V4.png> <./4-experiments/figures/USER
-BASED_T_V4.png>] [23]
-<./4-experiments/figures/SOCIALUSERBASED_V3.png, id=138, 903.375pt x 516.93124p
+ [22 <./4-experiments/figures/USERBASED_T_V4.png>]
+<./4-experiments/figures/SOCIALUSERBASED_V3.png, id=135, 903.375pt x 516.93124p
 t>
 File: ./4-experiments/figures/SOCIALUSERBASED_V3.png Graphic file (type png)
  <use ./4-experiments/figures/SOCIALUSERBASED_V3.png>
 Package pdftex.def Info: ./4-experiments/figures/SOCIALUSERBASED_V3.png used on
- input line 83.
+ input line 76.
 (pdftex.def)             Requested size: 401.50146pt x 229.75366pt.
+ [23]
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
 
-
-LaTeX Warning: Reference `experiment 1' on page 24 undefined on input line 90.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--92
-
- []
-
-[24 <./4-experiments/figures/SOCIALUSERBASED_V3.png>]
-Overfull \hbox (46.26697pt too wide) in paragraph at lines 120--129
- [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[24 <./4-experiments/figures/SOCIALUSERBASED_V3.png>]
+Underfull \hbox (badness 1983) in paragraph at lines 117--117
+[]\OT1/pfr/bx/n/10.95 Probability of
+ []
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--138
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
+[]\OT1/pfr/bx/n/10.95 Influence of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--119
+[]\OT1/pfr/bx/n/10.95 Influence of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
+[]\OT1/pfr/bx/n/10.95 Influence of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
+\OT1/pfr/bx/n/10.95 com-mu-nity
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--131
 
  []
 
@@ -798,23 +806,23 @@ File: ./4-experiments/figures/Result2_50_066_033_033.png Graphic file (type png
 )
  <use ./4-experiments/figures/Result2_50_066_033_033.png>
 Package pdftex.def Info: ./4-experiments/figures/Result2_50_066_033_033.png use
-d on input line 148.
+d on input line 141.
 (pdftex.def)             Requested size: 401.50146pt x 203.27658pt.
 
-<./4-experiments/figures/Result2_100_00_033_033.png, id=150, 648.4225pt x 367.3
-725pt>
+<./4-experiments/figures/Result2_100_00_033_033.png, id=150, 648.4225pt x 323.2
+075pt>
 File: ./4-experiments/figures/Result2_100_00_033_033.png Graphic file (type png
 )
  <use ./4-experiments/figures/Result2_100_00_033_033.png>
 Package pdftex.def Info: ./4-experiments/figures/Result2_100_00_033_033.png use
-d on input line 154.
-(pdftex.def)             Requested size: 401.50146pt x 227.47708pt.
+d on input line 147.
+(pdftex.def)             Requested size: 401.50146pt x 200.13013pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--162
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
 
  []
 
@@ -826,10 +834,10 @@ File: ./4-experiments/figures/InfluencerSimilarities_2.png Graphic file (type p
 ng)
  <use ./4-experiments/figures/InfluencerSimilarities_2.png>
 Package pdftex.def Info: ./4-experiments/figures/InfluencerSimilarities_2.png u
-sed on input line 177.
+sed on input line 170.
 (pdftex.def)             Requested size: 401.50146pt x 229.96318pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--187
+Underfull \hbox (badness 10000) in paragraph at lines 178--180
 
  []
 
@@ -839,32 +847,35 @@ File: ./4-experiments/figures/UserErrors.png Graphic file (type png)
 
 <use ./4-experiments/figures/UserErrors.png>
 Package pdftex.def Info: ./4-experiments/figures/UserErrors.png used on input l
-ine 191.
+ine 184.
 (pdftex.def)             Requested size: 401.50146pt x 229.96318pt.
- [30 <./4-experiments/figures/UserErrors.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 201--203
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--196
 
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30 <./4-experiments/figures/UserErrors.png>]
 <./4-experiments/figures/CFvsSocialCF_01.png, id=170, 903.375pt x 516.93124pt>
 File: ./4-experiments/figures/CFvsSocialCF_01.png Graphic file (type png)
 
 <use ./4-experiments/figures/CFvsSocialCF_01.png>
 Package pdftex.def Info: ./4-experiments/figures/CFvsSocialCF_01.png used on in
-put line 211.
+put line 204.
 (pdftex.def)             Requested size: 401.50146pt x 229.75366pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--218
+Underfull \hbox (badness 10000) in paragraph at lines 209--211
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--221
+Underfull \hbox (badness 10000) in paragraph at lines 212--214
 
  []
 
@@ -884,12 +895,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
 
 
-] [35] [36]) (./section-appendix/appendix.tex [37]
-[38
-
-
-
-]
+] [35]) (./section-appendix/appendix.tex [36]
 Appendix A.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--7
@@ -906,7 +912,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--22
 
  []
 
-[39]
+[37
+
+
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
@@ -926,18 +936,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--52
 
  []
 
-) [40] (./thesis.lof)
+) [38] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [41
+ [39
 
 
 
 
 
 
-] [42
+] [40
 
 
 
@@ -946,7 +956,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--52
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [43] (./thesis.aux)
+ [41] (./thesis.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 47.12pt have occurred.
@@ -954,18 +964,15 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 7719 strings out of 493315
- 112977 string characters out of 6137904
- 226922 words of memory out of 5000000
- 10990 multiletter control sequences out of 15000+600000
+ 7709 strings out of 493315
+ 112827 string characters out of 6137904
+ 227750 words of memory out of 5000000
+ 10980 multiletter control sequences out of 15000+600000
  17215 words of font info for 67 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 46i,14n,47p,1781b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,11n,47p,1593b,294s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -981,10 +988,10 @@ xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
 live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
 /2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on thesis.pdf (53 pages, 601962 bytes).
+Output written on thesis.pdf (51 pages, 595413 bytes).
 PDF statistics:
- 264 PDF objects out of 1000 (max. 8388607)
- 168 compressed objects within 2 object streams
+ 258 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
